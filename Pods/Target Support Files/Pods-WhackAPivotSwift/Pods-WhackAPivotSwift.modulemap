@@ -1,0 +1,6 @@
+framework module Pods_WhackAPivotSwift {
+  umbrella header "Pods-WhackAPivotSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

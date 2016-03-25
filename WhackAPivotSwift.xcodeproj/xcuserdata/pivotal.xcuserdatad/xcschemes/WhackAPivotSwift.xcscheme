@@ -20,6 +20,20 @@
                ReferencedContainer = "container:WhackAPivotSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE9C65821CA4508E0017DDF2"
+               BuildableName = "WhackAPivotSwiftUITests.xctest"
+               BlueprintName = "WhackAPivotSwiftUITests"
+               ReferencedContainer = "container:WhackAPivotSwift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -38,16 +52,6 @@
                ReferencedContainer = "container:WhackAPivotSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE9C65821CA4508E0017DDF2"
-               BuildableName = "WhackAPivotSwiftUITests.xctest"
-               BlueprintName = "WhackAPivotSwiftUITests"
-               ReferencedContainer = "container:WhackAPivotSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -62,7 +66,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"

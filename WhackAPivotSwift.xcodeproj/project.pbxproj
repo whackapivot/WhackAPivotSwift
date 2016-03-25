@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */; };
+		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
+		AE133DDE1CA4AC57002721E6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDD1CA4AC57002721E6 /* main.swift */; };
+		AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
+		AE133DE31CA4B854002721E6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
+		AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */; };
+		AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE11CA472350037EC59 /* PivotsService.swift */; };
+		AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */; };
+		AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE81CA48D170037EC59 /* Pivot.swift */; };
 		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
 		AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65691CA4508E0017DDF2 /* ViewController.swift */; };
 		AE9C656D1CA4508E0017DDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656B1CA4508E0017DDF2 /* Main.storyboard */; };
 		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
 		AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */; };
-		AE9C657D1CA4508E0017DDF2 /* WhackAPivotSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C657C1CA4508E0017DDF2 /* WhackAPivotSwiftTests.swift */; };
+		AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */; };
 		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		AE133DDD1CA4AC57002721E6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		AE3B6DA61CA456100018706F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "Pods/../build/Debug-iphoneos/Swinject.framework"; sourceTree = "<group>"; };
+		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
+		AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
+		AE4D9DE11CA472350037EC59 /* PivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PivotsService.swift; sourceTree = "<group>"; };
+		AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePivotsService.swift; sourceTree = "<group>"; };
+		AE4D9DE81CA48D170037EC59 /* Pivot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
 		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9C65691CA4508E0017DDF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,11 +64,14 @@
 		AE9C65711CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE9C65731CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9C657C1CA4508E0017DDF2 /* WhackAPivotSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftTests.swift; sourceTree = "<group>"; };
+		AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE9C657E1CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
 		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig"; sourceTree = "<group>"; };
+		E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +101,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12D989BDB9DAC914AF963D17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
+				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
+				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
+				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8554DB280D7803B8844523E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */,
+				AE3B6DA41CA456100018706F /* Nimble.framework */,
+				AE3B6DA51CA456100018706F /* Quick.framework */,
+				AE3B6DA61CA456100018706F /* Swinject.framework */,
+				24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */,
+				EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D9DE11CA472350037EC59 /* PivotsService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		AE4D9DE41CA48C4B0037EC59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */,
+			);
+			name = Services;
+			path = WhackAPivotSwiftTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		AE4D9DE71CA48CF40037EC59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D9DE81CA48D170037EC59 /* Pivot.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		AE9C655B1CA4508E0017DDF2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +157,8 @@
 				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
 				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
 				AE9C65651CA4508E0017DDF2 /* Products */,
+				12D989BDB9DAC914AF963D17 /* Pods */,
+				8554DB280D7803B8844523E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +175,16 @@
 		AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AE4D9DE71CA48CF40037EC59 /* Models */,
+				AE4D9DE31CA48C2B0037EC59 /* Services */,
 				AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */,
 				AE9C65691CA4508E0017DDF2 /* ViewController.swift */,
 				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
 				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
 				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
 				AE9C65731CA4508E0017DDF2 /* Info.plist */,
+				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
+				AE133DDD1CA4AC57002721E6 /* main.swift */,
 			);
 			path = WhackAPivotSwift;
 			sourceTree = "<group>";
@@ -110,8 +192,10 @@
 		AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE9C657C1CA4508E0017DDF2 /* WhackAPivotSwiftTests.swift */,
+				AE4D9DE41CA48C4B0037EC59 /* Services */,
+				AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */,
 				AE9C657E1CA4508E0017DDF2 /* Info.plist */,
+				AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */,
 			);
 			path = WhackAPivotSwiftTests;
 			sourceTree = "<group>";
@@ -132,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE9C658C1CA4508E0017DDF2 /* Build configuration list for PBXNativeTarget "WhackAPivotSwift" */;
 			buildPhases = (
+				178495FDDBE31181B9BEA04D /* Check Pods Manifest.lock */,
 				AE9C65601CA4508E0017DDF2 /* Sources */,
 				AE9C65611CA4508E0017DDF2 /* Frameworks */,
 				AE9C65621CA4508E0017DDF2 /* Resources */,
+				4EFC839D91729F9A01D9C741 /* Embed Pods Frameworks */,
+				9368DD8DC3EAF44EC34C57CC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE9C658F1CA4508E0017DDF2 /* Build configuration list for PBXNativeTarget "WhackAPivotSwiftTests" */;
 			buildPhases = (
+				2A49006CBDF68D738886DE66 /* Check Pods Manifest.lock */,
 				AE9C65741CA4508E0017DDF2 /* Sources */,
 				AE9C65751CA4508E0017DDF2 /* Frameworks */,
 				AE9C65761CA4508E0017DDF2 /* Resources */,
+				CCFFA8875EE5F2FEAB8CB4FE /* Embed Pods Frameworks */,
+				27F2AF61AF63225A20973302 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +341,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		178495FDDBE31181B9BEA04D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27F2AF61AF63225A20973302 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A49006CBDF68D738886DE66 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EFC839D91729F9A01D9C741 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9368DD8DC3EAF44EC34C57CC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCFFA8875EE5F2FEAB8CB4FE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE9C65601CA4508E0017DDF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE133DE31CA4B854002721E6 /* TestAppDelegate.swift in Sources */,
+				AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */,
 				AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */,
+				AE133DDE1CA4AC57002721E6 /* main.swift in Sources */,
+				AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */,
 				AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */,
+				AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +453,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9C657D1CA4508E0017DDF2 /* WhackAPivotSwiftTests.swift in Sources */,
+				AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */,
+				AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */,
+				AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DELEGATE_NAME = WhackAPivotSwift.TestAppDelegate;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -361,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_DELEGATE_NAME = WhackAPivotSwift.AppDelegate;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -397,8 +589,14 @@
 		};
 		AE9C658D1CA4508E0017DDF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = WhackAPivotSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwift;
@@ -408,8 +606,14 @@
 		};
 		AE9C658E1CA4508E0017DDF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = WhackAPivotSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwift;
@@ -419,8 +623,10 @@
 		};
 		AE9C65901CA4508E0017DDF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WhackAPivotSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwiftTests;
@@ -431,8 +637,10 @@
 		};
 		AE9C65911CA4508E0017DDF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WhackAPivotSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwiftTests;
@@ -484,6 +692,7 @@
 				AE9C658E1CA4508E0017DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE9C658F1CA4508E0017DDF2 /* Build configuration list for PBXNativeTarget "WhackAPivotSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +701,7 @@
 				AE9C65911CA4508E0017DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE9C65921CA4508E0017DDF2 /* Build configuration list for PBXNativeTarget "WhackAPivotSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +710,7 @@
 				AE9C65941CA4508E0017DDF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
