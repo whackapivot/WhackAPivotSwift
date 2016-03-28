@@ -31,7 +31,7 @@ class FakePivotsService: PivotsService {
     }
     
     func getPivots() -> [Pivot] {
-        getPivotsCallCount++
+        getPivotsCallCount += 1
         return pivots
     }
 }

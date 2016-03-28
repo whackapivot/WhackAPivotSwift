@@ -11,7 +11,8 @@
 		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
 		AE133DDE1CA4AC57002721E6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDD1CA4AC57002721E6 /* main.swift */; };
 		AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
-		AE133DE31CA4B854002721E6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
+		AE35FA7B1CA5E8180083EFE2 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
+		AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */; };
 		AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */; };
 		AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE11CA472350037EC59 /* PivotsService.swift */; };
 		AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */; };
@@ -48,6 +49,7 @@
 		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		AE133DDD1CA4AC57002721E6 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
 		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		AE3B6DA61CA456100018706F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "Pods/../build/Debug-iphoneos/Swinject.framework"; sourceTree = "<group>"; };
@@ -125,6 +127,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
+				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
+				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE35FA781CA5E7D40083EFE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C65691CA4508E0017DDF2 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AE35FA791CA5E7EC0083EFE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE35FA7A1CA5E7F50083EFE2 /* Fakes */,
+				AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AE35FA7A1CA5E7F50083EFE2 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
+		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,15 +177,6 @@
 			);
 			name = Services;
 			sourceTree = "<group>";
-		};
-		AE4D9DE41CA48C4B0037EC59 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */,
-			);
-			name = Services;
-			path = WhackAPivotSwiftTests;
-			sourceTree = SOURCE_ROOT;
 		};
 		AE4D9DE71CA48CF40037EC59 /* Models */ = {
 			isa = PBXGroup;
@@ -175,15 +211,13 @@
 		AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AE35FA781CA5E7D40083EFE2 /* Controllers */,
+				AE35FA771CA5E7C20083EFE2 /* Storyboards */,
 				AE4D9DE71CA48CF40037EC59 /* Models */,
 				AE4D9DE31CA48C2B0037EC59 /* Services */,
 				AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */,
-				AE9C65691CA4508E0017DDF2 /* ViewController.swift */,
-				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
 				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
-				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
 				AE9C65731CA4508E0017DDF2 /* Info.plist */,
-				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
 				AE133DDD1CA4AC57002721E6 /* main.swift */,
 			);
 			path = WhackAPivotSwift;
@@ -192,8 +226,8 @@
 		AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE4D9DE41CA48C4B0037EC59 /* Services */,
-				AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */,
+				AE35FA7C1CA5EBFF0083EFE2 /* Support */,
+				AE35FA791CA5E7EC0083EFE2 /* Controllers */,
 				AE9C657E1CA4508E0017DDF2 /* Info.plist */,
 				AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */,
 			);
@@ -439,7 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE133DE31CA4B854002721E6 /* TestAppDelegate.swift in Sources */,
+				AE35FA7B1CA5E8180083EFE2 /* TestAppDelegate.swift in Sources */,
 				AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */,
 				AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */,
 				AE133DDE1CA4AC57002721E6 /* main.swift in Sources */,
@@ -456,6 +490,7 @@
 				AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */,
 				AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */,
 				AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */,
+				AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

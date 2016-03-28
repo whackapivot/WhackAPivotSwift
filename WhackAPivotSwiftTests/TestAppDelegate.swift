@@ -1,5 +1,4 @@
 import UIKit
-import WhackAPivotSwift
 
 class TestAppDelegate: NSObject, UIApplicationDelegate {
     var window: UIWindow?

@@ -9,24 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel! { didSet { resultLabel.hidden = true } }
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet var imageViews: [UIImageView]!
     
     var pivotsService: PivotsService!
     
-    private var pivots: [Pivot] = []
-    var imageViews: [UIImageView] = []
+    private var pivots = [Pivot]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.hidden = true
         
         pivots = pivotsService.getPivots()
         nameLabel.text = pivots[0].name
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

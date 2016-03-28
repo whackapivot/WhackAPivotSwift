@@ -12,44 +12,40 @@ import Swinject
 
 @testable import WhackAPivotSwift
 
-class ViewControllerSpec: QuickSpec {
+class ViewControllerSpec: SwinjectSpec {
     override func spec() {
         describe("ViewController") {
-            var viewController: ViewController?
-            var fakePivotsService: FakePivotsService?
+            var viewController: ViewController!
+            var fakePivotsService: FakePivotsService!
             
             beforeEach { () -> () in
-                let container = Container()
-                container.registerForStoryboard(ViewController.self) { _, c in
+                self.testContainer.registerForStoryboard(ViewController.self) { _, controller in
                     fakePivotsService = FakePivotsService()
-                    c.pivotsService = fakePivotsService
+                    controller.pivotsService = fakePivotsService
                 }
                 
-                let storyboard = SwinjectStoryboard.create(name: "Main", bundle: nil, container: container)
-                viewController = storyboard.instantiateViewControllerWithIdentifier("ViewController") as? ViewController
-                let _ = viewController!.view
+                viewController = self.startController("ViewController", storyboardName: "Main") as! ViewController
             }
         
             
             it("has a hidden result label") {
-                expect(viewController!.resultLabel.hidden).to(beTruthy())
+                expect(viewController.resultLabel.hidden).to(beTruthy())
             }
             
             it("calls the PivotsService when being initialized") {
-                expect(fakePivotsService!.getPivotsCallCount).to(equal(1))
+                expect(fakePivotsService.getPivotsCallCount).to(equal(1))
             }
             
             it("selects a name from the returned pivots and puts it on the nameLabel") {
-                expect(fakePivotsService!.pivotNames).to(contain(viewController!.nameLabel.text))
+                expect(fakePivotsService.pivotNames).to(contain(viewController.nameLabel.text))
             }
             
             it("picks six different pivots for the six image views") {
-                var images = Set<String>()
-                
-                for imageView in viewController!.imageViews {
-                    images.insert(imageView.image.)
-                }
-                
+//                var images = Set<String>()
+//                
+//                for imageView in viewController.imageViews {
+//                    images.insert(imageView.image.)
+//                }
             }
         }
     }
