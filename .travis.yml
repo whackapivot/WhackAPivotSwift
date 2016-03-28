@@ -4,10 +4,5 @@ language: objective-c
 #xcode_scheme: WhackAPivotSwift
 #xcode_sdk: iphonesimulator9.2
 
-before_install: 
-- brew update
-- if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
-
-script: 
-- xctool clean build -project WhackAPivotalSwift.xcodeproj -scheme WhackAPivotSwift
-- xctool test -project WhackAPivotSwift.xcodeproj -scheme WhackAPivotSwift
+script:
+- xcodebuild test -workspace WhackAPivotSwift.xcworkspace -scheme WhackAPivotSwift -destination 'platform=iOS Simulator,name=iPhone 6' 
