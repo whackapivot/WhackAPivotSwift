@@ -5,7 +5,6 @@ target 'WhackAPivotSwift' do
     pod 'Swinject'
 end
 
-
 target 'WhackAPivotSwiftTests' do
     pod 'Swinject'
     pod 'Nimble'
