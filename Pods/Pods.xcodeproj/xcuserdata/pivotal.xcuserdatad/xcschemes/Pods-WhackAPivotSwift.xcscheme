@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '83F7ACD423412F8C169C037A'
+               BlueprintIdentifier = 'E90052A6AFDE4A1E11E25DF0'
                BlueprintName = 'Pods-WhackAPivotSwift'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_WhackAPivotSwift.framework'>

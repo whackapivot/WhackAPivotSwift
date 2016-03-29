@@ -4,9 +4,18 @@ PODS:
   - Swinject (1.1.1)
 
 DEPENDENCIES:
-  - Nimble
+  - Nimble (from `https://github.com/Quick/Nimble.git`)
   - Quick
   - Swinject
+
+EXTERNAL SOURCES:
+  Nimble:
+    :git: https://github.com/Quick/Nimble.git
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: 918ce7db50c532cdaa6f0cc79c438f612d82b444
+    :git: https://github.com/Quick/Nimble.git
 
 SPEC CHECKSUMS:
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
