@@ -44,8 +44,8 @@ platform :ios do
   lane :appstore do
     # match(type: "appstore")
     # snapshot
-    gym(scheme: 'WhackAPivotSwift') # Build your app - more options available
-    deliver(force: true)
+    # gym(scheme: 'WhackAPivotSwift') # Build your app - more options available
+    # deliver(force: true)
     # frameit
   end
 
@@ -53,14 +53,12 @@ platform :ios do
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful
-
     # slack(
     #   message: "Successfully deployed new App Update."
     # )
   end
 
   error do |lane, exception|
-    puts('Oh no! #{lane} #{exception}')
     # slack(
     #   message: exception.message,
     #   success: false
