@@ -29,16 +29,14 @@ platform :ios do
     gym(
       scheme: 'WhackAPivotSwift',
       workspace: 'WhackAPivotSwift.xcworkspace',
-      output_directory: 'tmp/',
-      output_name: 'WhackAPivotSwift.ipa'
+      output_name: 'WhackAPivotSwift.ipa',
+      clean: true
     )
 
-    pilot(
-      ipa: 'tmp/WhackAPivotSwift.ipa',
-      skip_submission: true
-    )
+    pilot
 
     commit_version_bump(message: 'Auto update build number...')
+    push_to_git_remote
   end
 
   desc "Deploy a new version to the App Store"
