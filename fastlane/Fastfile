@@ -29,11 +29,12 @@ platform :ios do
     gym(
       scheme: 'WhackAPivotSwift',
       workspace: 'WhackAPivotSwift.xcworkspace',
-      output_name: 'WhackAPivotSwift.ipa',
-      clean: true
+      output_name: 'WhackAPivotSwift.ipa'
     )
 
-    pilot
+    pilot(
+      skip_submission: true
+    )
 
     commit_version_bump(message: 'Auto update build number...')
     push_to_git_remote
