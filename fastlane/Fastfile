@@ -1,45 +1,44 @@
-# Customise this file, documentation can be found here:
-# https://github.com/fastlane/fastlane/tree/master/docs
-# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
-# can also be listed using the `fastlane actions` command
+# Customise this file, documentation can be found here: https://github.com/fastlane/fastlane/tree/master/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md, can also be listed using the `fastlane actions` command
 
-# Change the syntax highlighting to Ruby
-# All lines starting with a # are ignored when running `fastlane`
-
-# By default, fastlane will send which actions are used
-# No personal data is shared, more information on https://github.com/fastlane/enhancer
-# Uncomment the following line to opt out
-# opt_out_usage
-
-# If you want to automatically update fastlane if a new version is available:
-# update_fastlane
-
-# This is the minimum version number required.
-# Update this, if you use features of a newer version
-fastlane_version "1.68.0"
+# Keep this synced with version available on CI
+fastlane_version "1.32.0"
 
 default_platform :ios
 
 platform :ios do
   before_all do
-    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
-    
+    ensure_git_status_clean
+  end
+
+  desc "Continuous integration"
+  lane :ci do
+    specs
+    acceptance
   end
 
   desc "Runs all the tests"
-  lane :test do
+  lane :specs do
     scan(scheme: 'WhackAPivotSwift', device: 'iPhone 6 (9.3)', output_style: 'rspec')
   end
 
-  desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "WhackAPivotSwift") # Build your app - more options available
-    pilot
+  desc "Submit a new Build to Apple TestFlight"
+  lane :acceptance do
+    increment_build_number
 
-    # sh "your_script.sh"
-    # You can also use other beta testing services here (run `fastlane actions`)
+    gym(
+      scheme: 'WhackAPivotSwift',
+      workspace: 'WhackAPivotSwift.xcworkspace',
+      output_directory: "tmp/",
+      output_name: "WhackAPivotSwift.ipa"
+    )
+
+    pilot(
+      ipa: 'tmp/WhackAPivotSwift.ipa',
+      skip_submission: true
+    )
+
+    git_add 
   end
 
   desc "Deploy a new version to the App Store"
@@ -62,14 +61,10 @@ platform :ios do
   end
 
   error do |lane, exception|
+    puts("Oh no! #{lane} #{exception}")
     # slack(
     #   message: exception.message,
     #   success: false
     # )
   end
 end
-
-
-
-# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/docs/Platforms.md
-# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md

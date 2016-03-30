@@ -41,6 +41,7 @@ class ViewControllerSpec: SwinjectSpec {
             }
             
             it("picks six different pivots for the six image views") {
+//                expect(false).to(beTruthy())
 //                var images = Set<String>()
 //                
 //                for imageView in viewController.imageViews {
