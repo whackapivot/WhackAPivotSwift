@@ -29,8 +29,8 @@ platform :ios do
     gym(
       scheme: 'WhackAPivotSwift',
       workspace: 'WhackAPivotSwift.xcworkspace',
-      output_directory: "tmp/",
-      output_name: "WhackAPivotSwift.ipa"
+      output_directory: 'tmp/',
+      output_name: 'WhackAPivotSwift.ipa'
     )
 
     pilot(
@@ -38,14 +38,14 @@ platform :ios do
       skip_submission: true
     )
 
-    git_add 
+    commit_version_bump(message: 'Auto update build number...')
   end
 
   desc "Deploy a new version to the App Store"
   lane :appstore do
     # match(type: "appstore")
     # snapshot
-    gym(scheme: "WhackAPivotSwift") # Build your app - more options available
+    gym(scheme: 'WhackAPivotSwift') # Build your app - more options available
     deliver(force: true)
     # frameit
   end
@@ -61,7 +61,7 @@ platform :ios do
   end
 
   error do |lane, exception|
-    puts("Oh no! #{lane} #{exception}")
+    puts('Oh no! #{lane} #{exception}')
     # slack(
     #   message: exception.message,
     #   success: false
