@@ -28,7 +28,7 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-    scan(scheme: 'WhackAPivotSwift', device: 'iPhone 6 9.2', output_style: 'rspec')
+    scan(scheme: 'WhackAPivotSwift', device: 'iPhone 6 (9.3)', output_style: 'rspec')
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
