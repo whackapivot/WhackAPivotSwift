@@ -8,7 +8,7 @@ default_platform :ios
 
 platform :ios do
   before_all do
-    ensure_git_status_clean
+    # ensure_git_status_clean
   end
 
   desc "Continuous integration"
@@ -24,6 +24,31 @@ platform :ios do
 
   desc "Submit a new Build to Apple TestFlight"
   lane :acceptance do
+    keychain_name = "CI-Keychain"
+
+    create_keychain(
+      name: keychain_name,
+      default_keychain: true,
+      unlock: true,
+      timeout: 3600,
+      lock_when_sleeps: true,
+      password: SecureRandom.base64
+    )
+
+    import_certificate(
+      certificate_path: "fastlane/SigningIdentities/DistributionSigningIdentity.p12",
+      certificate_password: ENV["KEY_PASSWORD"],
+      keychain_name: keychain_name
+    )
+
+    sigh(
+      adhoc: true,
+      username: "palfvin@gmail.com",
+      team_id: "22XZS247UC",
+      provisioning_name: "iPhoneAdHocProfile",
+      cert_id: "22XZS247UC"
+    )
+
     increment_build_number
 
     gym(
@@ -36,7 +61,7 @@ platform :ios do
       skip_submission: true
     )
 
-    commit_version_bump(message: 'Auto update build number...')
+    commit_version_bump(message: "Auto update build number to: #{get_build_number}")
     push_to_git_remote
   end
 

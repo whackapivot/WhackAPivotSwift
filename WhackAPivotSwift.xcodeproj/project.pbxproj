@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
+		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
+		AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */; };
+		AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */; };
+		AE9C656D1CA4508E0017DDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656B1CA4508E0017DDF2 /* Main.storyboard */; };
+		AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE81CA48D170037EC59 /* Pivot.swift */; };
+		AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE11CA472350037EC59 /* PivotsService.swift */; };
 		65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */; };
 		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
+		AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */; };
+		AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */; };
 		AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
 		AE35FA7B1CA5E8180083EFE2 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
-		AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */; };
-		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
-		AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */; };
-		AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE11CA472350037EC59 /* PivotsService.swift */; };
-		AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */; };
-		AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE81CA48D170037EC59 /* Pivot.swift */; };
-		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
 		AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65691CA4508E0017DDF2 /* ViewController.swift */; };
-		AE9C656D1CA4508E0017DDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656B1CA4508E0017DDF2 /* Main.storyboard */; };
-		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
-		AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */; };
 		AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */; };
 		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
+		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,36 +44,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
-		AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
-		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE9C656C1CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE9C65711CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePivotsService.swift; sourceTree = "<group>"; };
+		AE9C65731CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9C657E1CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		AE4D9DE81CA48D170037EC59 /* Pivot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
+		AE4D9DE11CA472350037EC59 /* PivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PivotsService.swift; sourceTree = "<group>"; };
+		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig"; sourceTree = "<group>"; };
+		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
+		EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		AE3B6DA61CA456100018706F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "Pods/../build/Debug-iphoneos/Swinject.framework"; sourceTree = "<group>"; };
-		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
+		AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
 		AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
-		AE4D9DE11CA472350037EC59 /* PivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PivotsService.swift; sourceTree = "<group>"; };
-		AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePivotsService.swift; sourceTree = "<group>"; };
-		AE4D9DE81CA48D170037EC59 /* Pivot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
-		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 		AE9C65691CA4508E0017DDF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE9C656C1CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE9C65711CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AE9C65731CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
-		AE9C657E1CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
-		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig"; sourceTree = "<group>"; };
-		E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,38 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12D989BDB9DAC914AF963D17 /* Pods */ = {
+		AE9C655B1CA4508E0017DDF2 = {
 			isa = PBXGroup;
 			children = (
-				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
-				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
-				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
-				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
+				8554DB280D7803B8844523E9 /* Frameworks */,
+				12D989BDB9DAC914AF963D17 /* Pods */,
+				AE9C65651CA4508E0017DDF2 /* Products */,
+				AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */,
+				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
+				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8554DB280D7803B8844523E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */,
-				AE3B6DA41CA456100018706F /* Nimble.framework */,
-				AE3B6DA51CA456100018706F /* Quick.framework */,
-				AE3B6DA61CA456100018706F /* Swinject.framework */,
-				24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */,
-				EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
-				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
-				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
-			);
-			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		AE35FA781CA5E7D40083EFE2 /* Controllers */ = {
@@ -162,20 +140,17 @@
 			name = Fakes;
 			sourceTree = "<group>";
 		};
-		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
+		8554DB280D7803B8844523E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */,
+				AE3B6DA41CA456100018706F /* Nimble.framework */,
+				24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */,
+				AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */,
+				EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */,
+				AE3B6DA51CA456100018706F /* Quick.framework */,
+				AE3B6DA61CA456100018706F /* Swinject.framework */,
 			);
-			name = Support;
-			sourceTree = "<group>";
-		};
-		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				AE4D9DE11CA472350037EC59 /* PivotsService.swift */,
-			);
-			name = Services;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AE4D9DE71CA48CF40037EC59 /* Models */ = {
@@ -186,16 +161,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		AE9C655B1CA4508E0017DDF2 = {
+		12D989BDB9DAC914AF963D17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */,
-				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
-				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
-				AE9C65651CA4508E0017DDF2 /* Products */,
-				12D989BDB9DAC914AF963D17 /* Pods */,
-				8554DB280D7803B8844523E9 /* Frameworks */,
+				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
+				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
+				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
+				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AE9C65651CA4508E0017DDF2 /* Products */ = {
@@ -208,17 +182,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE4D9DE11CA472350037EC59 /* PivotsService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
+				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
+				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */ = {
 			isa = PBXGroup;
 			children = (
-				AE35FA771CA5E7C20083EFE2 /* Storyboards */,
-				AE35FA781CA5E7D40083EFE2 /* Controllers */,
-				AE4D9DE31CA48C2B0037EC59 /* Services */,
-				AE4D9DE71CA48CF40037EC59 /* Models */,
-				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
 				AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */,
-				AE35FAE71CAAEB0C0083EFE2 /* main.swift */,
+				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
+				AE35FA781CA5E7D40083EFE2 /* Controllers */,
 				AE9C65731CA4508E0017DDF2 /* Info.plist */,
+				AE4D9DE71CA48CF40037EC59 /* Models */,
+				AE4D9DE31CA48C2B0037EC59 /* Services */,
+				AE35FA771CA5E7C20083EFE2 /* Storyboards */,
+				AE35FAE71CAAEB0C0083EFE2 /* main.swift */,
 			);
 			path = WhackAPivotSwift;
 			sourceTree = "<group>";
@@ -226,10 +226,10 @@
 		AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE35FA7C1CA5EBFF0083EFE2 /* Support */,
 				AE35FA791CA5E7EC0083EFE2 /* Controllers */,
-				AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */,
 				AE9C657E1CA4508E0017DDF2 /* Info.plist */,
+				AE35FA7C1CA5EBFF0083EFE2 /* Support */,
+				AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */,
 			);
 			path = WhackAPivotSwiftTests;
 			sourceTree = "<group>";
@@ -237,8 +237,8 @@
 		AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */,
 				AE9C65891CA4508E0017DDF2 /* Info.plist */,
+				AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */,
 			);
 			path = WhackAPivotSwiftUITests;
 			sourceTree = "<group>";
@@ -354,8 +354,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */,
 				AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */,
+				AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */,
 				AE9C656D1CA4508E0017DDF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,13 +474,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE35FA7B1CA5E8180083EFE2 /* TestAppDelegate.swift in Sources */,
-				AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */,
-				AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */,
-				AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */,
-				AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */,
 				AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */,
 				AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */,
+				AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */,
+				AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */,
+				AE35FA7B1CA5E8180083EFE2 /* TestAppDelegate.swift in Sources */,
+				AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */,
+				AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,10 +488,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */,
 				AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */,
-				AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */,
 				AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */,
+				AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */,
+				AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,9 +556,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -604,9 +605,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
