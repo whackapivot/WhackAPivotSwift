@@ -3,6 +3,8 @@ use_frameworks!
 
 target 'WhackAPivotSwift' do
     pod 'Swinject'
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
 target 'WhackAPivotSwiftTests' do

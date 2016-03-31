@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
-		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
-		AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */; };
-		AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */; };
-		AE9C656D1CA4508E0017DDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656B1CA4508E0017DDF2 /* Main.storyboard */; };
-		AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE81CA48D170037EC59 /* Pivot.swift */; };
-		AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE11CA472350037EC59 /* PivotsService.swift */; };
 		65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */; };
 		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
-		AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */; };
-		AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */; };
 		AE133DE01CA4ADD3002721E6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
 		AE35FA7B1CA5E8180083EFE2 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */; };
+		AE35FA7E1CA5EC110083EFE2 /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */; };
+		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
+		AE4D9DE01CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */; };
+		AE4D9DE21CA472350037EC59 /* PivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE11CA472350037EC59 /* PivotsService.swift */; };
+		AE4D9DE61CA48C990037EC59 /* FakePivotsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */; };
+		AE4D9DE91CA48D170037EC59 /* Pivot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4D9DE81CA48D170037EC59 /* Pivot.swift */; };
+		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
 		AE9C656A1CA4508E0017DDF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65691CA4508E0017DDF2 /* ViewController.swift */; };
+		AE9C656D1CA4508E0017DDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656B1CA4508E0017DDF2 /* Main.storyboard */; };
+		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
+		AE9C65721CA4508E0017DDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */; };
 		AE9C657D1CA4508E0017DDF2 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */; };
 		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
-		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,36 +44,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE9C656C1CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE9C65711CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePivotsService.swift; sourceTree = "<group>"; };
-		AE9C65731CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE9C657E1CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		AE4D9DE81CA48D170037EC59 /* Pivot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
-		AE4D9DE11CA472350037EC59 /* PivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PivotsService.swift; sourceTree = "<group>"; };
-		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig"; sourceTree = "<group>"; };
-		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
-		EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
+		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		AE3B6DA61CA456100018706F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "Pods/../build/Debug-iphoneos/Swinject.framework"; sourceTree = "<group>"; };
-		AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
+		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
 		AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
-		AE133DDF1CA4ADD3002721E6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
-		AE9C65691CA4508E0017DDF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE4D9DE11CA472350037EC59 /* PivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PivotsService.swift; sourceTree = "<group>"; };
+		AE4D9DE51CA48C990037EC59 /* FakePivotsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePivotsService.swift; sourceTree = "<group>"; };
+		AE4D9DE81CA48D170037EC59 /* Pivot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pivot.swift; sourceTree = "<group>"; };
 		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE9C65691CA4508E0017DDF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE9C656C1CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE9C65711CA4508E0017DDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE9C65731CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
+		AE9C657C1CA4508E0017DDF2 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE9C657E1CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
+		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig"; sourceTree = "<group>"; };
+		E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +103,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AE9C655B1CA4508E0017DDF2 = {
+		12D989BDB9DAC914AF963D17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8554DB280D7803B8844523E9 /* Frameworks */,
-				12D989BDB9DAC914AF963D17 /* Pods */,
-				AE9C65651CA4508E0017DDF2 /* Products */,
-				AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */,
-				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
-				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
+				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
+				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
+				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
+				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
 			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8554DB280D7803B8844523E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE3B6DA41CA456100018706F /* Nimble.framework */,
+				24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */,
+				AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */,
+				EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */,
+				AE3B6DA51CA456100018706F /* Quick.framework */,
+				AE3B6DA61CA456100018706F /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
+				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
+				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		AE35FA781CA5E7D40083EFE2 /* Controllers */ = {
@@ -140,46 +162,12 @@
 			name = Fakes;
 			sourceTree = "<group>";
 		};
-		8554DB280D7803B8844523E9 /* Frameworks */ = {
+		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				AE3B6DA41CA456100018706F /* Nimble.framework */,
-				24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */,
-				AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */,
-				EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */,
-				AE3B6DA51CA456100018706F /* Quick.framework */,
-				AE3B6DA61CA456100018706F /* Swinject.framework */,
+				AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE4D9DE71CA48CF40037EC59 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				AE4D9DE81CA48D170037EC59 /* Pivot.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		12D989BDB9DAC914AF963D17 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
-				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
-				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
-				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AE9C65651CA4508E0017DDF2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */,
-				AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */,
-				AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */,
-			);
-			name = Products;
+			name = Support;
 			sourceTree = "<group>";
 		};
 		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
@@ -190,22 +178,34 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
-		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
+		AE4D9DE71CA48CF40037EC59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AE9C65701CA4508E0017DDF2 /* LaunchScreen.storyboard */,
-				AE9C656B1CA4508E0017DDF2 /* Main.storyboard */,
-				AE4D9DDF1CA4710D0037EC59 /* SwinjectStoryboard+Setup.swift */,
+				AE4D9DE81CA48D170037EC59 /* Pivot.swift */,
 			);
-			name = Storyboards;
+			name = Models;
 			sourceTree = "<group>";
 		};
-		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
+		AE9C655B1CA4508E0017DDF2 = {
 			isa = PBXGroup;
 			children = (
-				AE35FA7D1CA5EC110083EFE2 /* SwinjectSpec.swift */,
+				8554DB280D7803B8844523E9 /* Frameworks */,
+				12D989BDB9DAC914AF963D17 /* Pods */,
+				AE9C65651CA4508E0017DDF2 /* Products */,
+				AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */,
+				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
+				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
 			);
-			name = Support;
+			sourceTree = "<group>";
+		};
+		AE9C65651CA4508E0017DDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */,
+				AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */,
+				AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */ = {
@@ -256,6 +256,7 @@
 				AE9C65621CA4508E0017DDF2 /* Resources */,
 				4EFC839D91729F9A01D9C741 /* Embed Pods Frameworks */,
 				9368DD8DC3EAF44EC34C57CC /* Copy Pods Resources */,
+				AE5591F41CADE6270000941F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -451,6 +452,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AE5591F41CADE6270000941F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 23fb4ec1d38e04b6f9e451e7daf6a4acac02c422 23148e93cebbbdc8e7e5a07bf3ff8272ca2227a79be0f2870f7475850087e5b4";
 		};
 		CCFFA8875EE5F2FEAB8CB4FE /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
