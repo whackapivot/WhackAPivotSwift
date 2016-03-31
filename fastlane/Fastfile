@@ -68,7 +68,7 @@ platform :ios do
       skip_submission: true
     )
 
-    commit_version_bump(message: "Auto update build number to: #{get_build_number}\n[ci-skip]")
+    commit_version_bump(message: "Auto update build number to: #{get_build_number}\n[ci skip]")
     push_to_git_remote(remote_branch: 'master')
   end
 
