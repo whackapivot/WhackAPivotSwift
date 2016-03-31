@@ -634,8 +634,8 @@
 			baseConfigurationReference = 9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Peter Alfvin (SD224DZYP4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Peter Alfvin (SD224DZYP4)";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -645,7 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e97f60e6-9874-44fd-86d2-3e7a1005ec91";
+				PROVISIONING_PROFILE = "61294e86-913d-4be3-88cb-fcf2aaced696";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -655,8 +655,8 @@
 			baseConfigurationReference = DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Peter Alfvin (22XZS247UC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Peter Alfvin (22XZS247UC)";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
