@@ -668,7 +668,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d97f40ce-d9a8-45c8-b1a2-27d18c005de7";
+				PROVISIONING_PROFILE = "552fe8ca-bc7f-4098-bc62-88de7e411bc2";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
