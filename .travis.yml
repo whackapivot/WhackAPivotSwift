@@ -8,5 +8,7 @@ env:
 before_script:
 - openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in fastlane/SigningIdentities/DistributionSigningIdentity.p12.enc
   -d -a -out fastlane/SigningIdentities/DistributionSigningIdentity.p12
+- openssl aes-256-cbc -k $ENCRYPTION_PASSWORD -in fastlane/SigningIdentities/DevelopmentSigningIdentity.p12.enc
+  -d -a -out fastlane/SigningIdentities/DevelopmentSigningIdentity.p12
 script:
 - fastlane ci

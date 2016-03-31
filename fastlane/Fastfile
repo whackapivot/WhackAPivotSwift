@@ -41,6 +41,13 @@ platform :ios do
       keychain_name: keychain_name
     )
 
+    # The development certificate is required even if you do not reference it in your XCode configuration
+    import_certificate(
+      certificate_path: "fastlane/SigningIdentities/DevelopmentSigningIdentity.p12",
+      certificate_password: ENV["KEY_PASSWORD"],
+      keychain_name: keychain_name
+    )
+
     sigh(
       adhoc: true,
       username: "palfvin@gmail.com",
