@@ -49,7 +49,6 @@ platform :ios do
     )
 
     sigh(
-      adhoc: true,
       username: "palfvin@gmail.com",
       team_id: "22XZS247UC",
       provisioning_name: "iPhoneAdHocProfile",
