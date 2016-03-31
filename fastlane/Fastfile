@@ -69,7 +69,7 @@ platform :ios do
     )
 
     commit_version_bump(message: "Auto update build number to: #{get_build_number}\n[ci-skip]")
-    push_to_git_remote
+    push_to_git_remote(remote_branch: 'master')
   end
 
   desc "Deploy a new version to the App Store"
