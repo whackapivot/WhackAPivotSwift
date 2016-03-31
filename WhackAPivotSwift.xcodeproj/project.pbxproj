@@ -645,7 +645,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e97f60e6-9874-44fd-86d2-3e7a1005ec91";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -666,7 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LAPivotalBeach.WhackAPivotSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e97f60e6-9874-44fd-86d2-3e7a1005ec91";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
