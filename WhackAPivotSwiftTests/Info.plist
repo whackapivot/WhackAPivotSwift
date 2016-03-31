@@ -21,6 +21,6 @@
 	<key>APP_DELEGATE_NAME</key>
 	<string>${APP_DELEGATE_NAME}</string>
 	<key>CFBundleVersion</key>
-	<string>12</string>
+	<string>13</string>
 </dict>
 </plist>
