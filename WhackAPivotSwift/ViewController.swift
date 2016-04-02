@@ -11,16 +11,41 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel! { didSet { resultLabel.hidden = true } }
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet var imageViews: [UIImageView]!
+    @IBOutlet var personButtons: [UIButton]!
     
-    var pivotsService: PivotsService!
+    var peopleChoicesAndTargetService: PeopleChoicesAndTargetService!
     
-    private var pivots = [Pivot]()
+    var peopleChoicesAndTarget: PeopleChoicesAndTarget!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        startNewRound()
+    }
+    
+    private func startNewRound() {
+        peopleChoicesAndTarget = peopleChoicesAndTargetService.provide()
         
-        pivots = pivotsService.getPivots()
-        nameLabel.text = pivots[0].name
+        for (index, person) in peopleChoicesAndTarget.peopleChoices.enumerate() {
+            let personImage = UIImage(named: person.image)
+            personButtons[index].setBackgroundImage(personImage, forState: .Normal)
+        }
+        
+        nameLabel.text = peopleChoicesAndTarget.peopleChoices[peopleChoicesAndTarget.target].name
+    }
+    
+    // MARK: Actions
+    
+    @IBAction func clickedOnButton(button: UIButton) {
+        
+        let indexOfClickedButton = personButtons.indexOf(button)
+        
+        if(indexOfClickedButton == peopleChoicesAndTarget.target) {
+            startNewRound()
+        }
+        else {
+            resultLabel.text = "Incorrect!"
+            resultLabel.hidden = false
+        }
+        
     }
 }

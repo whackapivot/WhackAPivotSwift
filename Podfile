@@ -9,6 +9,6 @@ end
 
 target 'WhackAPivotSwiftTests' do
     pod 'Swinject'
-    pod 'Nimble', git: 'https://github.com/Quick/Nimble.git'
+    pod 'Nimble'
     pod 'Quick'
 end

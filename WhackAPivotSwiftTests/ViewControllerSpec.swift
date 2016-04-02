@@ -16,13 +16,28 @@ class ViewControllerSpec: SwinjectSpec {
     override func spec() {
         describe("ViewController") {
             var viewController: ViewController!
-            var fakePivotsService: FakePivotsService!
+            var fakePeopleChoicesAndTargetService: FakePeopleChoicesAndTargetService!
             
-            beforeEach { () -> () in
+            let fakePeople = [
+                Person(name: "Joe", image: "Joe Image"),
+                Person(name: "Steve", image: "Steve Image"),
+                Person(name: "Steve2", image: "Steve2 Image"),
+                Person(name: "Steve3", image: "Steve3 Image"),
+                Person(name: "Steve4", image: "Steve4 Image"),
+                Person(name: "Steve5", image: "Steve5 Image"),
+            ]
+
+            beforeEach {
+                fakePeopleChoicesAndTargetService = FakePeopleChoicesAndTargetService()
+                
+                fakePeopleChoicesAndTargetService.provideReturns(
+                    PeopleChoicesAndTarget(peopleChoices: fakePeople, target: 1)
+                )
+                
                 self.testContainer.registerForStoryboard(ViewController.self) { _, controller in
-                    fakePivotsService = FakePivotsService()
-                    controller.pivotsService = fakePivotsService
+                    controller.peopleChoicesAndTargetService = fakePeopleChoicesAndTargetService
                 }
+                
                 
                 viewController = self.startController("ViewController", storyboardName: "Main") as! ViewController
             }
@@ -32,22 +47,35 @@ class ViewControllerSpec: SwinjectSpec {
                 expect(viewController.resultLabel.hidden).to(beTruthy())
             }
             
-            it("calls the PivotsService when being initialized") {
-                expect(fakePivotsService.getPivotsCallCount).to(equal(1))
+            it("it obtains a PeopleChoicesAndTarget") {
+                expect(fakePeopleChoicesAndTargetService.provideCallCount).to(equal(1))
             }
             
-            it("selects a name from the returned pivots and puts it on the nameLabel") {
-                expect(fakePivotsService.pivotNames).to(contain(viewController.nameLabel.text))
+            it("sets the nameLabel to the name of the target person") {
+                expect(viewController.nameLabel.text).to(equal("Steve"))
             }
             
-            it("picks six different pivots for the six image views") {
-//                expect(false).to(beTruthy())
-//                var images = Set<String>()
-//                
-//                for imageView in viewController.imageViews {
-//                    images.insert(imageView.image.)
-//                }
+            describe("clicking the correct image") {
+                beforeEach {
+                    viewController.clickedOnButton(viewController.personButtons[1])
+                }
+                
+                it("it obatins a new PeopleChoicesAndTarget") {
+                    expect(fakePeopleChoicesAndTargetService.provideCallCount).to(equal(2))
+                }
             }
+            
+            describe("clicking an incorrect image") {
+                beforeEach {
+                    viewController.clickedOnButton(viewController.personButtons[0])
+                }
+                
+                it("unhides the result message and displays Incorrect") {
+                    expect(viewController.resultLabel.text).to(equal("Incorrect!"))
+                    expect(viewController.resultLabel.hidden).to(beFalsy())
+                }
+            }
+            
         }
     }
 }

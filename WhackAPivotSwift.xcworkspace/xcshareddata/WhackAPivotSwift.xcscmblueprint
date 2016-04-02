@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "51033166B0A4A36119000D914735690A9B53784B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "51033166B0A4A36119000D914735690A9B53784B" : 0,
+    "876D5A00B42D68BA2D5C63A382E7D8B82A6B5C22" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8FDC203F-95A0-4EE0-A41F-602806EBAD26",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "51033166B0A4A36119000D914735690A9B53784B" : "WhackAPivotSwift\/",
+    "876D5A00B42D68BA2D5C63A382E7D8B82A6B5C22" : "whackapivot\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WhackAPivotSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WhackAPivotSwift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/whackapivot\/WhackAPivotSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "51033166B0A4A36119000D914735690A9B53784B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/palfvin\/whackapivot.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "876D5A00B42D68BA2D5C63A382E7D8B82A6B5C22"
+    }
+  ]
+}
