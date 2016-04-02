@@ -36,3 +36,6 @@ fastlane/test_output
 ## Security files
 *.p12
 *.mobileprovision
+
+## other
+.DS_Store
