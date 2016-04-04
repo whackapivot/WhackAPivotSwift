@@ -22,7 +22,7 @@ class PeopleRandomizerSpec: QuickSpec {
                         result = subject.getRandomSubset(ofSize: 2, from: people, avoiding: [people[0], people[2]])
                     }
                     
-                    fit("returns the remaining element as the target") {
+                    it("returns the remaining element as the target") {
                         expect(result.peopleChoices[result.target]).to(equal(people[1]))
                     }
                 }

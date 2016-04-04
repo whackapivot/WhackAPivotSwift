@@ -5,26 +5,30 @@ import Foundation
 
 @testable import WhackAPivotSwift
 
-class FakePeopleService : PeopleService {
+class FakePeopleService : PeopleService, Equatable {
     init() {
     }
-
+    
     private(set) var getPeopleCallCount : Int = 0
     var getPeopleStub : (() -> ([Person]
-))?
+    ))?
     func getPeopleReturns(stubbedValues: ([Person]
-)) {
+        )) {
         self.getPeopleStub = {() -> ([Person]
-) in
+            ) in
             return stubbedValues
         }
     }
     func getPeople() -> ([Person]
-) {
-        self.getPeopleCallCount++
-        return self.getPeopleStub!()
+        ) {
+            self.getPeopleCallCount += 1
+            return self.getPeopleStub!()
     }
-
+    
     static func reset() {
     }
+}
+
+func == (a: FakePeopleService, b: FakePeopleService) -> Bool {
+    return a === b
 }

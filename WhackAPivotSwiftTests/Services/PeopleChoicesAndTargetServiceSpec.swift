@@ -89,7 +89,8 @@ class PeopleChoicesAndTargetServiceSpec: SwinjectSpec {
                             peopleChoicesAndTargetService.provide()
                             }
                     }
-                    fit("starts over again with no one to avoid") {
+                    
+                    it("starts over again with no one to avoid") {
                         peopleChoicesAndTargetService.provide()
                         NSLog("Call count is \(fakePeopleRandomizer.getRandomSubsetCallCount)")
                         let args = fakePeopleRandomizer.getRandomSubsetArgsForCall(9)
