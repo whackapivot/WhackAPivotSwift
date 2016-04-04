@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet var personButtons: [UIButton]!
     
     var peopleChoicesAndTargetService: PeopleChoicesAndTargetService!
+    var personDisplayer: PersonDisplayer!
     
-    var peopleChoicesAndTarget: PeopleChoicesAndTarget!
+    private var peopleChoicesAndTarget: PeopleChoicesAndTarget!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +25,9 @@ class ViewController: UIViewController {
     
     private func startNewRound() {
         peopleChoicesAndTarget = peopleChoicesAndTargetService.provide()
-        
         for (index, person) in peopleChoicesAndTarget.peopleChoices.enumerate() {
-            let personImage = UIImage(named: person.image)
-            personButtons[index].setBackgroundImage(personImage, forState: .Normal)
+            personDisplayer!.display(person, button: personButtons[index])
         }
-        
         nameLabel.text = peopleChoicesAndTarget.peopleChoices[peopleChoicesAndTarget.target].name
     }
     
@@ -40,6 +38,7 @@ class ViewController: UIViewController {
         let indexOfClickedButton = personButtons.indexOf(button)
         
         if(indexOfClickedButton == peopleChoicesAndTarget.target) {
+            resultLabel.hidden = true
             startNewRound()
         }
         else {

@@ -12,11 +12,19 @@ extension SwinjectStoryboard {
     class func setup() {
         defaultContainer.registerForStoryboard(ViewController.self) { r, c in
             c.peopleChoicesAndTargetService = r.resolve(PeopleChoicesAndTargetService.self)
+            c.personDisplayer = r.resolve(PersonDisplayer.self)!
         }
+        
         defaultContainer.register(PeopleChoicesAndTargetService.self) { r in
-            PeopleChoicesAndTargetServiceImpl(peopleService: r.resolve(PeopleService.self)!, peopleRandomizer: r.resolve(PeopleRandomizer.self)!)
+            PeopleChoicesAndTargetServiceImpl(
+                peopleService: r.resolve(PeopleService.self)!,
+                peopleRandomizer: r.resolve(PeopleRandomizer.self)!
+            )
         }
+        
         defaultContainer.register(PeopleService.self) { _ in PeopleServiceImpl() }
         defaultContainer.register(PeopleRandomizer.self) { _ in PeopleRandomizerImpl() }
+        defaultContainer.register(PersonDisplayer.self) { _ in PersonDisplayerImpl() }
+        
     }
 }

@@ -23,7 +23,7 @@ class PeopleRandomizerImpl: PeopleRandomizer {
                 people[4],
                 people[5],
             ],
-            target: 3)
+            target: Int(arc4random_uniform(6)))
     }
     
 }

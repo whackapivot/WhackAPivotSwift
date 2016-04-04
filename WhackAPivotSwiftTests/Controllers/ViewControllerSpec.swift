@@ -36,6 +36,7 @@ class ViewControllerSpec: SwinjectSpec {
                 
                 self.testContainer.registerForStoryboard(ViewController.self) { _, controller in
                     controller.peopleChoicesAndTargetService = fakePeopleChoicesAndTargetService
+                    controller.personDisplayer = PersonDisplayerImpl()
                 }
                 
                 
@@ -55,7 +56,7 @@ class ViewControllerSpec: SwinjectSpec {
                 expect(viewController.nameLabel.text).to(equal("Steve"))
             }
             
-            describe("clicking the correct image") {
+            describe("clicking the correct image after an incorrect one") {
                 beforeEach {
                     viewController.clickedOnButton(viewController.personButtons[1])
                 }
@@ -73,6 +74,16 @@ class ViewControllerSpec: SwinjectSpec {
                 it("unhides the result message and displays Incorrect") {
                     expect(viewController.resultLabel.text).to(equal("Incorrect!"))
                     expect(viewController.resultLabel.hidden).to(beFalsy())
+                }
+                
+                describe("And then a correct one") {
+                    beforeEach {
+                        viewController.clickedOnButton(viewController.personButtons[1])
+                    }
+
+                    it("shows a blank result message") {
+                        expect(viewController.resultLabel.hidden).to(beTruthy())
+                    }
                 }
             }
             
