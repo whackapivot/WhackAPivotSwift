@@ -150,8 +150,7 @@
 				A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */,
 			);
 			name = Utilities;
-			path = ../../../../Users/palfvin/workspace/WhackAPivotSwift/WhackAPivotSwift;
-			sourceTree = DEVELOPER_DIR;
+			sourceTree = "<group>";
 		};
 		A35BFBAE1CB20D25004AC2AA /* Main */ = {
 			isa = PBXGroup;
@@ -162,9 +161,8 @@
 				AE35FAE71CAAEB0C0083EFE2 /* main.swift */,
 				A35BFBB11CB20FC6004AC2AA /* Bar.swift */,
 			);
-			name = Main;
-			path = WhackAPivotSwift/Main;
-			sourceTree = SOURCE_ROOT;
+			path = Main;
+			sourceTree = "<group>";
 		};
 		AE2A3CD71CAF2116006E3C54 /* Services */ = {
 			isa = PBXGroup;
@@ -189,8 +187,7 @@
 				A35BFBAC1CB20CFC004AC2AA /* ViewController.swift */,
 			);
 			name = Controllers;
-			path = WhackAPivotSwift;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		AE35FA791CA5E7EC0083EFE2 /* Controllers */ = {
 			isa = PBXGroup;
@@ -264,12 +261,12 @@
 			children = (
 				A35BFBD31CB2180C004AC2AA /* Info.plist */,
 				A35BFBAE1CB20D25004AC2AA /* Main */,
-				A35BFB9B1CB1EC1F004AC2AA /* Utilities */,
 				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
 				AE35FA781CA5E7D40083EFE2 /* Controllers */,
 				AE4D9DE71CA48CF40037EC59 /* Models */,
 				AE4D9DE31CA48C2B0037EC59 /* Services */,
 				AE35FA771CA5E7C20083EFE2 /* Storyboards */,
+				A35BFB9B1CB1EC1F004AC2AA /* Utilities */,
 			);
 			path = WhackAPivotSwift;
 			sourceTree = "<group>";
