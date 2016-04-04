@@ -4,6 +4,7 @@ PODS:
   - Fabric (1.6.7)
   - Nimble (3.2.0)
   - Quick (0.9.1)
+  - RandomKit (1.6.0)
   - Swinject (1.1.1)
 
 DEPENDENCIES:
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Fabric
   - Nimble
   - Quick
+  - RandomKit
   - Swinject
 
 SPEC CHECKSUMS:
@@ -18,6 +20,7 @@ SPEC CHECKSUMS:
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
+  RandomKit: 9b33ce5fc448056e8ddaaef655da315b26f23e32
   Swinject: 8c1b46e49c604f8c5c1f45f92ef314d3736bbef4
 
 COCOAPODS: 0.39.0

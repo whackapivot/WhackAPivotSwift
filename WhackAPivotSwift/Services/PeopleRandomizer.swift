@@ -1,29 +1,17 @@
-//
-//  PeopleRandomizer.swift
-//  WhackAPivotSwift
-//
-//  Created by Pivotal on 4/1/16.
-//  Copyright © 2016 Pivotal. All rights reserved.
-//
-
 import Foundation
+import RandomKit
 
 protocol PeopleRandomizer {
-    func getRandomSubset(people: [Person], peopleToAvoid: Set<Person>) -> PeopleChoicesAndTarget
+    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> PeopleChoicesAndTarget
 }
 
 class PeopleRandomizerImpl: PeopleRandomizer {
-    func getRandomSubset(people: [Person], peopleToAvoid: Set<Person>) -> PeopleChoicesAndTarget {
-        return PeopleChoicesAndTarget(peopleChoices:
-            [
-                people[0],
-                people[1],
-                people[2],
-                people[3],
-                people[4],
-                people[5],
-            ],
-            target: Int(arc4random_uniform(6)))
+    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> PeopleChoicesAndTarget {
+        let allPeople = Set(people)
+        let potentialTargets = allPeople.subtract(peopleToAvoid)
+        let targetPerson = Array(potentialTargets)[Int(arc4random_uniform(UInt32(potentialTargets.count)))]
+        let remainingPeople = Array(allPeople.subtract([targetPerson]))
+        let choices: [Person] = Array([targetPerson] + remainingPeople[0..<(ofSize-1)]).shuffle()
+        return PeopleChoicesAndTarget(peopleChoices: choices, target: choices.indexOf(targetPerson)!)
     }
-    
 }

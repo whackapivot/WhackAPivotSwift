@@ -87,6 +87,10 @@ class ViewControllerSpec: SwinjectSpec {
                 }
             }
             
+            describe("correctly clicking the last image of the set") {
+                
+            }
+            
         }
     }
 }

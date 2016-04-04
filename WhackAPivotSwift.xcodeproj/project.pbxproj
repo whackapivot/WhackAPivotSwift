@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */; };
 		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
+		A311909B1CB2308B00F6DA90 /* FakePeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31190991CB22F2100F6DA90 /* FakePeopleRandomizer.swift */; };
 		A35BFBA31CB20C9B004AC2AA /* PeopleChoicesAndTargetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA01CB20C9B004AC2AA /* PeopleChoicesAndTargetService.swift */; };
 		A35BFBA41CB20C9B004AC2AA /* PeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */; };
 		A35BFBA51CB20C9B004AC2AA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */; };
@@ -21,14 +22,13 @@
 		A35BFBBB1CB2119E004AC2AA /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBA1CB2119E004AC2AA /* ViewControllerSpec.swift */; };
 		A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */; };
 		A35BFBC81CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */; };
-		A35BFBC91CB2127E004AC2AA /* FakePeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC61CB2127E004AC2AA /* FakePeopleRandomizer.swift */; };
 		A35BFBCA1CB2127E004AC2AA /* FakePeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC71CB2127E004AC2AA /* FakePeopleService.swift */; };
 		A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */; };
 		A35BFBCE1CB2157C004AC2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCC1CB2157C004AC2AA /* Main.storyboard */; };
 		A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */; };
-		A35BFBD41CB2180C004AC2AA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBD31CB2180C004AC2AA /* Info.plist */; };
 		A35BFBD61CB2189C004AC2AA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBD51CB2189C004AC2AA /* Info.plist */; };
 		A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */; };
+		A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */; };
 		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
 		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
 		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
@@ -56,6 +56,7 @@
 		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		A31190991CB22F2100F6DA90 /* FakePeopleRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePeopleRandomizer.swift; sourceTree = "<group>"; };
 		A35BFBA01CB20C9B004AC2AA /* PeopleChoicesAndTargetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleChoicesAndTargetService.swift; path = Services/PeopleChoicesAndTargetService.swift; sourceTree = "<group>"; };
 		A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleRandomizer.swift; path = Services/PeopleRandomizer.swift; sourceTree = "<group>"; };
 		A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleService.swift; path = Services/PeopleService.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		A35BFBBA1CB2119E004AC2AA /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
 		A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleChoicesAndTargetService.swift; path = Fakes/FakePeopleChoicesAndTargetService.swift; sourceTree = "<group>"; };
-		A35BFBC61CB2127E004AC2AA /* FakePeopleRandomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleRandomizer.swift; path = Fakes/FakePeopleRandomizer.swift; sourceTree = "<group>"; };
 		A35BFBC71CB2127E004AC2AA /* FakePeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleService.swift; path = Fakes/FakePeopleService.swift; sourceTree = "<group>"; };
 		A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35BFBCC1CB2157C004AC2AA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		A35BFBD31CB2180C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35BFBD51CB2189C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRandomizerSpec.swift; sourceTree = "<group>"; };
 		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
@@ -144,6 +145,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A31190981CB22F2100F6DA90 /* fakes */ = {
+			isa = PBXGroup;
+			children = (
+				A31190991CB22F2100F6DA90 /* FakePeopleRandomizer.swift */,
+			);
+			name = fakes;
+			path = Services/fakes;
+			sourceTree = "<group>";
+		};
 		A35BFB9B1CB1EC1F004AC2AA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				A35BFBB81CB21194004AC2AA /* PeopleChoicesAndTargetServiceSpec.swift */,
+				A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */,
-				A35BFBC61CB2127E004AC2AA /* FakePeopleRandomizer.swift */,
 				A35BFBC71CB2127E004AC2AA /* FakePeopleService.swift */,
 			);
 			name = Fakes;
@@ -221,6 +231,7 @@
 				A35BFBA01CB20C9B004AC2AA /* PeopleChoicesAndTargetService.swift */,
 				A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */,
 				A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */,
+				A31190981CB22F2100F6DA90 /* fakes */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -404,7 +415,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35BFBD41CB2180C004AC2AA /* Info.plist in Resources */,
 				AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */,
 				A35BFBCE1CB2157C004AC2AA /* Main.storyboard in Resources */,
 				A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */,
@@ -558,11 +568,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35BFBC91CB2127E004AC2AA /* FakePeopleRandomizer.swift in Sources */,
 				A35BFBCA1CB2127E004AC2AA /* FakePeopleService.swift in Sources */,
 				A35BFBB91CB21194004AC2AA /* PeopleChoicesAndTargetServiceSpec.swift in Sources */,
 				A35BFBC81CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift in Sources */,
+				A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */,
 				A35BFBBB1CB2119E004AC2AA /* ViewControllerSpec.swift in Sources */,
+				A311909B1CB2308B00F6DA90 /* FakePeopleRandomizer.swift in Sources */,
 				A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

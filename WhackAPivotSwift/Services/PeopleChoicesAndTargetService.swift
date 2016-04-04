@@ -1,11 +1,3 @@
-//
-//  PeopleChoicesAndTargetProvider.swift
-//  WhackAPivotSwift
-//
-//  Created by Pivotal on 4/1/16.
-//  Copyright © 2016 Pivotal. All rights reserved.
-//
-
 import Foundation
 
 protocol PeopleChoicesAndTargetService {
@@ -18,14 +10,18 @@ class PeopleChoicesAndTargetServiceImpl: PeopleChoicesAndTargetService {
     private var previouslyTargetedPeople = Set<Person>()
     
     init(peopleService: PeopleService, peopleRandomizer: PeopleRandomizer) {
-        self.peopleRandomizer = peopleRandomizer
         people = peopleService.getPeople()
+        self.peopleRandomizer = peopleRandomizer
     }
     
     func provide() -> PeopleChoicesAndTarget {
-        let peopleChoicesAndTarget = peopleRandomizer.getRandomSubset(people, peopleToAvoid: previouslyTargetedPeople)
+        let peopleChoicesAndTarget = peopleRandomizer.getRandomSubset(ofSize: 6, from: people, avoiding: previouslyTargetedPeople)
         
-        previouslyTargetedPeople.insert(people[peopleChoicesAndTarget.target])
+        previouslyTargetedPeople.insert(peopleChoicesAndTarget.peopleChoices[peopleChoicesAndTarget.target])
+        
+        if previouslyTargetedPeople.count == people.count {
+            previouslyTargetedPeople = []
+        }
         
         return peopleChoicesAndTarget
     }

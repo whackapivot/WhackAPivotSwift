@@ -15,6 +15,6 @@ protocol PeopleService {
 
 class PeopleServiceImpl: PeopleService {
     func getPeople() -> [Person] {
-        return Range(0...40).map { i in Person(name: "\(i)", image: "\(i)") }
+        return Range(0...10).map { i in Person(name: "\(i)", image: "\(i)") }
     }
 }
