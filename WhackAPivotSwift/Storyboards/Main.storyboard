@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="xwB-29-9W0">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Ujx-wK-sQy" customClass="LoginViewController" customModule="WhackAPivotSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ad1-F4-z5O"/>
+                        <viewControllerLayoutGuide type="bottom" id="acA-mx-3K1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0eQ-Im-v9B">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="0eQ-Im-v9B" id="XwI-qV-yL0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iz5-mz-PVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="619"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTz-AV-5jN" userLabel="Left Button">
-                                <rect key="frame" x="10" y="30" width="186.5" height="188.5"/>
+                                <rect key="frame" x="10" y="30" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rTz-AV-5jN" secondAttribute="height" multiplier="187:189" id="FFX-SQ-qk1"/>
@@ -28,48 +49,48 @@
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujk-Wx-tKl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-fk-E4s" userLabel="Center Button">
-                                <rect key="frame" x="206" y="30" width="187" height="188.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-fk-E4s" userLabel="Center Button">
+                                <rect key="frame" x="206" y="30" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQZ-kb-shD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td5-rj-8jn" userLabel="Right Button">
-                                <rect key="frame" x="403" y="30" width="186.5" height="188.5"/>
+                                <rect key="frame" x="403" y="30" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eW-T6-37Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKh-ZQ-Qjl" userLabel="L Left Button">
-                                <rect key="frame" x="10" y="228" width="186.5" height="189"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKh-ZQ-Qjl" userLabel="L Left Button">
+                                <rect key="frame" x="10" y="228" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zif-Va-0h3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-Nc-xVC" userLabel="L Center Button">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-Nc-xVC" userLabel="L Center Button">
                                 <rect key="frame" x="206" y="228" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1g6-A8-zep"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pa-bO-6kk" userLabel="L Right Button">
-                                <rect key="frame" x="403" y="228" width="186.5" height="189"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pa-bO-6kk" userLabel="L Right Button">
+                                <rect key="frame" x="403" y="228" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Va-l3-uGu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{result}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAv-OM-gh6">
-                                <rect key="frame" x="272" y="518.5" width="56" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="{result}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAv-OM-gh6">
+                                <rect key="frame" x="272" y="519" width="56" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="{name}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-G6-bgA">
-                                <rect key="frame" x="272" y="559.5" width="55.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="{name}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-G6-bgA">
+                                <rect key="frame" x="272" y="560" width="56" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>

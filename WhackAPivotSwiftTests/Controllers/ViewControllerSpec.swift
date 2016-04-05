@@ -1,11 +1,3 @@
-//
-//  WhackAPivotSwiftTests.swift
-//  WhackAPivotSwiftTests
-//
-//  Created by Pivotal on 3/24/16.
-//  Copyright © 2016 Pivotal. All rights reserved.
-//
-
 import Quick
 import Nimble
 import Swinject
