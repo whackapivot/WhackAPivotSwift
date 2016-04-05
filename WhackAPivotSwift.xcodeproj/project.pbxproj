@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
 		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
-		A35BFBB21CB20FC6004AC2AA /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBB11CB20FC6004AC2AA /* Bar.swift */; };
 		AE83CBAE1CB34EB80030378E /* FakeLoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83CBAD1CB347380030378E /* FakeLoginViewControllerDelegate.swift */; };
 		A35BFBC81CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */; };
 		AEBB8F7B1CB318420050A0D4 /* FakePeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A35BFBB11CB20FC6004AC2AA /* Bar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 		AE83CBAD1CB347380030378E /* FakeLoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleChoicesAndTargetService.swift; path = Fakes/FakePeopleChoicesAndTargetService.swift; sourceTree = "<group>"; };
 		AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FakePeopleRandomizer.swift; path = Fakes/FakePeopleRandomizer.swift; sourceTree = "<group>"; };
@@ -323,7 +321,7 @@
 				AE9C65621CA4508E0017DDF2 /* Resources */,
 				4EFC839D91729F9A01D9C741 /* Embed Pods Frameworks */,
 				9368DD8DC3EAF44EC34C57CC /* Copy Pods Resources */,
-				AE5591F41CADE6270000941F /* ShellScript */,
+				AE5591F41CADE6270000941F /* Embed Fabric Framework */,
 			);
 			buildRules = (
 			);
@@ -520,13 +518,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE5591F41CADE6270000941F /* ShellScript */ = {
+		AE5591F41CADE6270000941F /* Embed Fabric Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Embed Fabric Framework";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,7 +555,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */,
-				A35BFBB21CB20FC6004AC2AA /* Bar.swift in Sources */,
 				AE80D80F1CB33F8A00AF3488 /* LoginViewController.swift in Sources */,
 				A35BFBAA1CB20CE8004AC2AA /* PeopleChoicesAndTarget.swift in Sources */,
 				A35BFBA31CB20C9B004AC2AA /* PeopleChoicesAndTargetService.swift in Sources */,
