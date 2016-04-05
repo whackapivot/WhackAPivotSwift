@@ -9,42 +9,46 @@
 import UIKit
 import WebKit
 
-protocol LoginViewControllerDelegate {
-    func loginSuccessful()
-}
-
-
-class LoginViewController: UIViewController, WKNavigationDelegate {
+class LoginViewController: UIViewController, UIWebViewDelegate {
     
-    var webView: WKWebView!
-    var delegate: LoginViewControllerDelegate!
+    var urlProvider: URLProvider!
+    var webView: UIWebView!
+    let authToken = "authToken"
+    let loginPath = "/mobile_login"
+    let successPath = "/mobile_success"
     
     override func loadView() {
-        webView = WKWebView()
-        webView.navigationDelegate = self
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        webView = UIWebView()
+        webView.delegate = self
+        view = webView
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        let url = NSURLRequest(URL: urlProvider.urlForPath(loginPath))
+        webView.loadRequest(url)
+    }
+
     
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func webViewDidFinishLoad(webView: UIWebView) {
+        if webView.request!.URL == urlProvider.urlForPath(successPath) {
+            let cookieJar = NSHTTPCookieStorage.sharedHTTPCookieStorage()
+            
+            var pivotsTwoSession: NSHTTPCookie?
+            for cookie in cookieJar.cookies! {
+                if cookie.name == "_pivots-two_session" {
+                    pivotsTwoSession = cookie
+                    break
+                }
+            }
+            
+            if pivotsTwoSession != nil {
+                let defaults = NSUserDefaults.standardUserDefaults()
+                defaults.setObject(pivotsTwoSession!.value, forKey: authToken)
+                defaults.synchronize()
+                
+                self.performSegueWithIdentifier("MainView", sender: self)
+            }
+        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -6,20 +6,24 @@ protocol PeopleChoicesAndTargetService {
 
 class PeopleChoicesAndTargetServiceImpl: PeopleChoicesAndTargetService {
     private let peopleRandomizer: PeopleRandomizer
-    private let people: [Person]
+    private let peopleService: PeopleService
+    private var people: [Person]?
     private var previouslyTargetedPeople = Set<Person>()
     
     init(peopleService: PeopleService, peopleRandomizer: PeopleRandomizer) {
-        people = peopleService.getPeople()
         self.peopleRandomizer = peopleRandomizer
+        self.peopleService = peopleService
     }
     
     func provide() -> PeopleChoicesAndTarget {
-        let peopleChoicesAndTarget = peopleRandomizer.getRandomSubset(ofSize: 6, from: people, avoiding: previouslyTargetedPeople)
+        if people == nil {
+            people = peopleService.getPeople()
+        }
+        let peopleChoicesAndTarget = peopleRandomizer.getRandomSubset(ofSize: 6, from: people!, avoiding: previouslyTargetedPeople)
         
         previouslyTargetedPeople.insert(peopleChoicesAndTarget.peopleChoices[peopleChoicesAndTarget.target])
         
-        if previouslyTargetedPeople.count == people.count {
+        if previouslyTargetedPeople.count == people!.count {
             previouslyTargetedPeople = []
         }
         

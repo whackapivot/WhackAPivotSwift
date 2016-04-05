@@ -30,6 +30,7 @@
 		A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */; };
 		A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */; };
 		A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */; };
+		AE83CBB01CB409940030378E /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83CBAF1CB409940030378E /* URLProvider.swift */; };
 		A35BFBAD1CB20CFC004AC2AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBAC1CB20CFC004AC2AA /* ViewController.swift */; };
 		A35BFBBB1CB2119E004AC2AA /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBA1CB2119E004AC2AA /* ViewControllerSpec.swift */; };
 		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
@@ -88,6 +89,7 @@
 		A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
 		A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
 		A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		AE83CBAF1CB409940030378E /* URLProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 		A35BFBAC1CB20CFC004AC2AA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		A35BFBBA1CB2119E004AC2AA /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +143,6 @@
 			children = (
 				AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */,
 				A35BFBAC1CB20CFC004AC2AA /* ViewController.swift */,
-				AE83CBAC1CB347380030378E /* fakes */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -259,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */,
+				AE83CBAF1CB409940030378E /* URLProvider.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -297,14 +299,6 @@
 				AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */,
 			);
 			path = WhackAPivotSwiftUITests;
-			sourceTree = "<group>";
-		};
-		AE83CBAC1CB347380030378E /* fakes */ = {
-			isa = PBXGroup;
-			children = (
-				AE83CBAD1CB347380030378E /* FakeLoginViewControllerDelegate.swift */,
-			);
-			path = fakes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +557,7 @@
 				A35BFBA71CB20CD8004AC2AA /* PersonDisplayer.swift in Sources */,
 				A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */,
 				A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */,
+				AE83CBB01CB409940030378E /* URLProvider.swift in Sources */,
 				A35BFBAD1CB20CFC004AC2AA /* ViewController.swift in Sources */,
 				AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */,
 			);
@@ -572,7 +567,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE83CBAE1CB34EB80030378E /* FakeLoginViewControllerDelegate.swift in Sources */,
 				A35BFBC81CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift in Sources */,
 				AEBB8F7B1CB318420050A0D4 /* FakePeopleRandomizer.swift in Sources */,
 				A35BFBCA1CB2127E004AC2AA /* FakePeopleService.swift in Sources */,

@@ -15,6 +15,10 @@ extension SwinjectStoryboard {
             c.personDisplayer = r.resolve(PersonDisplayer.self)!
         }
         
+        defaultContainer.registerForStoryboard(LoginViewController.self) { r, c in
+            c.urlProvider = r.resolve(URLProvider.self)
+        }
+        
         defaultContainer.register(PeopleChoicesAndTargetService.self) { r in
             PeopleChoicesAndTargetServiceImpl(
                 peopleService: r.resolve(PeopleService.self)!,
@@ -25,6 +29,7 @@ extension SwinjectStoryboard {
         defaultContainer.register(PeopleService.self) { _ in PeopleServiceImpl() }
         defaultContainer.register(PeopleRandomizer.self) { _ in PeopleRandomizerImpl() }
         defaultContainer.register(PersonDisplayer.self) { _ in PersonDisplayerImpl() }
+        defaultContainer.register(URLProvider.self) { _ in URLProviderImpl(baseURL: "https://pivots.pivotallabs.com") }
         
     }
 }
