@@ -13,9 +13,11 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
     
     var urlProvider: URLProvider!
     var webView: UIWebView!
+    var peopleService: PeopleService!
     let authToken = "authToken"
     let loginPath = "/mobile_login"
     let successPath = "/mobile_success"
+    var seguePerformed = false
     
     override func loadView() {
         webView = UIWebView()
@@ -46,9 +48,16 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
                 let defaults = NSUserDefaults.standardUserDefaults()
                 defaults.setObject(pivotsTwoSession!.value, forKey: authToken)
                 defaults.synchronize()
-                
-                self.performSegueWithIdentifier("MainView", sender: self)
+                peopleService.assemblePeople({
+                    self.performSegueWithIdentifier()
+                })
+            
             }
         }
+    }
+    
+    private func performSegueWithIdentifier() {
+        seguePerformed = true   // only for unit testing purposes
+        self.performSegueWithIdentifier("MainView", sender: self)
     }
 }

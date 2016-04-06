@@ -7,8 +7,10 @@ protocol PersonDisplayer {
 
 class PersonDisplayerImpl: PersonDisplayer  {
     func display(person: Person, button: UIButton) {
-        let image = imageFromText(person.name, font: UIFont.systemFontOfSize(10), maxWidth: 100, color: UIColor.blackColor())
-        button.setBackgroundImage(image, forState: .Normal)
+        if let url = NSURL(string: person.image), data = NSData(contentsOfURL: url) {
+            let image = UIImage(data: data)
+            button.setBackgroundImage(image, forState: .Normal)
+        }
     }
     
     private func sizeOfAttributeString(str: NSAttributedString, maxWidth: CGFloat) -> CGSize {

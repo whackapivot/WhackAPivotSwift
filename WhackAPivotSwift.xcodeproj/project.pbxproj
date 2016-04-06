@@ -12,7 +12,7 @@
 		AE83CBAE1CB34EB80030378E /* FakeLoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83CBAD1CB347380030378E /* FakeLoginViewControllerDelegate.swift */; };
 		A35BFBC81CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */; };
 		AEBB8F7B1CB318420050A0D4 /* FakePeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */; };
-		A35BFBCA1CB2127E004AC2AA /* FakePeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC71CB2127E004AC2AA /* FakePeopleService.swift */; };
+		AE77635F1CB4DF2800BC7853 /* FakePeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */; };
 		A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */; };
 		AE80D80F1CB33F8A00AF3488 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */; };
 		AE80D8111CB33FE900AF3488 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */; };
@@ -60,7 +60,7 @@
 		AE83CBAD1CB347380030378E /* FakeLoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleChoicesAndTargetService.swift; path = Fakes/FakePeopleChoicesAndTargetService.swift; sourceTree = "<group>"; };
 		AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FakePeopleRandomizer.swift; path = Fakes/FakePeopleRandomizer.swift; sourceTree = "<group>"; };
-		A35BFBC71CB2127E004AC2AA /* FakePeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleService.swift; path = Fakes/FakePeopleService.swift; sourceTree = "<group>"; };
+		AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleService.swift; path = Fakes/FakePeopleService.swift; sourceTree = "<group>"; };
 		A35BFBD31CB2180C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35BFBD51CB2189C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			children = (
 				A35BFBC51CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift */,
 				AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */,
-				A35BFBC71CB2127E004AC2AA /* FakePeopleService.swift */,
+				AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */,
 			);
 			name = Fakes;
 			sourceTree = "<group>";
@@ -569,7 +569,7 @@
 			files = (
 				A35BFBC81CB2127E004AC2AA /* FakePeopleChoicesAndTargetService.swift in Sources */,
 				AEBB8F7B1CB318420050A0D4 /* FakePeopleRandomizer.swift in Sources */,
-				A35BFBCA1CB2127E004AC2AA /* FakePeopleService.swift in Sources */,
+				AE77635F1CB4DF2800BC7853 /* FakePeopleService.swift in Sources */,
 				AE80D8111CB33FE900AF3488 /* LoginViewControllerSpec.swift in Sources */,
 				A35BFBB91CB21194004AC2AA /* PeopleChoicesAndTargetServiceSpec.swift in Sources */,
 				A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */,

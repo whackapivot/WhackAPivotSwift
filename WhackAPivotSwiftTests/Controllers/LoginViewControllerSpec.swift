@@ -9,13 +9,16 @@ class LoginViewControllerSpec: SwinjectSpec {
     override func spec() {
         describe("LoginViewController") {
             var controller: LoginViewController!
-            var fakeControllerDelegate: FakeLoginViewControllerDelegate!
+            var fakePeopleService: FakePeopleService!
             var testURLProvider = URLProviderImpl(baseURL: "http://cashcats.biz")
             func webView() -> UIWebView { return controller.view as! UIWebView }
             
-            beforeEach {                
+            beforeEach {
+                fakePeopleService = FakePeopleService()
+                fakePeopleService.assemblePeopleReturns()
                 self.testContainer.registerForStoryboard(LoginViewController.self) { _, controller in
                     controller.urlProvider = testURLProvider
+                    controller.peopleService = fakePeopleService
                 }
                 
                 controller = self.startController("LoginViewController", storyboardName: "Main") as! LoginViewController
@@ -102,8 +105,17 @@ class LoginViewControllerSpec: SwinjectSpec {
                             expect(NSUserDefaults.standardUserDefaults().stringForKey(authToken)).to(equal(cookie.value))
                         }
                         
-                        it("should send a global notification for view controllers to catch") {
-                            expect(fakeControllerDelegate.loginSuccessfulCallCount).to(equal(1))
+                        it("should tell the people service to assemble the people") {
+                            expect(fakePeopleService.assemblePeopleCallCount).to(equal(1))
+                        }
+                        
+                        describe("When the people are assembled") {
+                            beforeEach {
+                                fakePeopleService.assemblePeopleArgsForCall(0)()
+                            }
+                            it("should segue to the next screen") {
+                                expect(controller.seguePerformed).to(beTruthy())
+                            }
                         }
                     }
                     
@@ -117,8 +129,8 @@ class LoginViewControllerSpec: SwinjectSpec {
                             expect(NSUserDefaults.standardUserDefaults().stringForKey(authToken)).to(beNil())
                         }
                         
-                        it("should not trigger a notification") {
-                            expect(fakeControllerDelegate.loginSuccessfulCallCount).to(equal(0))
+                        it("should not tell the people service to assemble the people") {
+                            expect(fakePeopleService.assemblePeopleCallCount).to(equal(0))
                         }
                         
                     }

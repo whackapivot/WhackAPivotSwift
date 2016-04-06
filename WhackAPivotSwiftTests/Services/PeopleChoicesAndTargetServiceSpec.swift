@@ -36,10 +36,6 @@ class PeopleChoicesAndTargetServiceSpec: SwinjectSpec {
                 peopleChoicesAndTargetService = self.testContainer.resolve(PeopleChoicesAndTargetService.self)!
             }
             
-            it("Should obtain people from the PeopleService") {
-                expect(fakePeopleService.getPeopleCallCount).to(equal(1))
-            }
-            
             describe("#provide") {
                 var result: PeopleChoicesAndTarget!
                 let stubbedResult = PeopleChoicesAndTarget(peopleChoices: [fakePeople[1]], target: 0)
