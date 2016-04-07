@@ -9,24 +9,20 @@
         <!--Login View Controller-->
         <scene sceneID="xwB-29-9W0">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iz5-mz-PVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="LoginViewController" id="Ujx-wK-sQy" customClass="LoginViewController" customModule="WhackAPivotSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ad1-F4-z5O"/>
-                        <viewControllerLayoutGuide type="bottom" id="acA-mx-3K1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="0eQ-Im-v9B">
+                    <webView key="view" contentMode="scaleToFill" id="Fr9-62-N1Y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                    </webView>
                     <connections>
-                        <outlet property="containerView" destination="0eQ-Im-v9B" id="XwI-qV-yL0"/>
+                        <outlet property="webView" destination="Fr9-62-N1Y" id="0vu-rw-lMn"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="MainView" id="Mja-Fz-w8l"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iz5-mz-PVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663" y="625"/>
+            <point key="canvasLocation" x="542" y="806"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -143,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1374" y="625"/>
+            <point key="canvasLocation" x="1242" y="806"/>
         </scene>
     </scenes>
 </document>

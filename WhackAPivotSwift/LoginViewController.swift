@@ -11,26 +11,23 @@ import WebKit
 
 class LoginViewController: UIViewController, UIWebViewDelegate {
     
+    @IBOutlet weak var webView: UIWebView!
+    
     var urlProvider: URLProvider!
-    var webView: UIWebView!
     var peopleService: PeopleService!
+    
     let authToken = "authToken"
     let loginPath = "/mobile_login"
     let successPath = "/mobile_success"
+    
     var seguePerformed = false
-    
-    override func loadView() {
-        webView = UIWebView()
-        webView.delegate = self
-        view = webView
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        let url = NSURLRequest(URL: urlProvider.urlForPath(loginPath))
-        webView.loadRequest(url)
-    }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        webView.delegate = self
+        webView.loadRequest(NSURLRequest(URL: urlProvider.urlForPath(loginPath)))
+    }
     
     func webViewDidFinishLoad(webView: UIWebView) {
         if webView.request!.URL == urlProvider.urlForPath(successPath) {
@@ -44,14 +41,13 @@ class LoginViewController: UIViewController, UIWebViewDelegate {
                 }
             }
             
-            if pivotsTwoSession != nil {
+            if let pivotsTwoSessionValue = pivotsTwoSession?.value {
                 let defaults = NSUserDefaults.standardUserDefaults()
-                defaults.setObject(pivotsTwoSession!.value, forKey: authToken)
+                defaults.setObject(pivotsTwoSessionValue, forKey: authToken)
                 defaults.synchronize()
-                peopleService.assemblePeople({
+                peopleService.assemblePeople {
                     self.performSegueWithIdentifier()
-                })
-            
+                }
             }
         }
     }

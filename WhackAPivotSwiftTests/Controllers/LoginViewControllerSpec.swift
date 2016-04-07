@@ -10,12 +10,12 @@ class LoginViewControllerSpec: SwinjectSpec {
         describe("LoginViewController") {
             var controller: LoginViewController!
             var fakePeopleService: FakePeopleService!
-            var testURLProvider = URLProviderImpl(baseURL: "http://cashcats.biz")
-            func webView() -> UIWebView { return controller.view as! UIWebView }
+            let testURLProvider = URLProviderImpl(baseURL: "http://cashcats.biz")
             
             beforeEach {
                 fakePeopleService = FakePeopleService()
                 fakePeopleService.assemblePeopleReturns()
+                
                 self.testContainer.registerForStoryboard(LoginViewController.self) { _, controller in
                     controller.urlProvider = testURLProvider
                     controller.peopleService = fakePeopleService
@@ -29,17 +29,12 @@ class LoginViewControllerSpec: SwinjectSpec {
             }
             
             it("should set itself as the web view delegate") {
-                expect(webView().delegate).to(beIdenticalTo(controller))
+                expect(controller.webView.delegate).to(beIdenticalTo(controller))
             }
             
-            describe("View will appear") {
-                beforeEach {
-                    controller.viewWillAppear(false)
-                }
-                it("should ask the web view to load the correct URL") {
-//                     THIS TEST IS FAILING - CAN'T FIGURE OUT WHY
-//                    expect(webView().request?.URL).to(equal(testURLProvider.urlForPath("/mobile_login")))
-                }
+            //TODO: Fix this test
+            xit("should make a loadRequest to the login url") {
+                expect(controller.webView.request?.URL).to(equal(testURLProvider.urlForPath("/mobile_login")))
             }
             
             describe("View did finish navigation") {
@@ -61,6 +56,7 @@ class LoginViewControllerSpec: SwinjectSpec {
                         return myRequest
                     }
                 }
+                
                 var fakeWebView: FakeUIWebView!
                 
                 beforeEach {
@@ -113,6 +109,7 @@ class LoginViewControllerSpec: SwinjectSpec {
                             beforeEach {
                                 fakePeopleService.assemblePeopleArgsForCall(0)()
                             }
+                            
                             it("should segue to the next screen") {
                                 expect(controller.seguePerformed).to(beTruthy())
                             }
@@ -132,7 +129,6 @@ class LoginViewControllerSpec: SwinjectSpec {
                         it("should not tell the people service to assemble the people") {
                             expect(fakePeopleService.assemblePeopleCallCount).to(equal(0))
                         }
-                        
                     }
                 }
             }

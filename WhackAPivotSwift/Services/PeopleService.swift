@@ -23,9 +23,8 @@ class PeopleServiceImpl: PeopleService {
         let urlRequest = NSMutableURLRequest(URL: NSURL(string: "https://pivots.pivotallabs.com/api/users.json")!)
         let cookieValue = "_pivots-two_session=\(sessionToken!)"
         urlRequest.setValue(cookieValue, forHTTPHeaderField: "Cookie")
-        let completionHandler: (NSData?,
-                              NSURLResponse?,
-                              NSError?) -> () = { (data, response, error) in
+        
+        let completionHandler: (NSData?, NSURLResponse?, NSError?) -> () = { (data, response, error) in
             guard let responseData = data else {
                 print("Error: did not receive data")
                 return
@@ -61,6 +60,7 @@ class PeopleServiceImpl: PeopleService {
             
             completion()
         }
+        
         let task = session.dataTaskWithRequest(urlRequest, completionHandler: completionHandler)
         task.resume()
     }
