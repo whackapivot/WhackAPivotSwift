@@ -11,15 +11,15 @@ class PersonChallengeServiceSpec: SwinjectSpec {
             var fakePeopleRandomizer: FakePeopleRandomizer!
             
             let fakePeople = [
-                Person(name: "Joe", image: "Joe Image"),
-                Person(name: "Steve", image: "Steve Image"),
-                Person(name: "Steve2", image: "Steve2 Image"),
-                Person(name: "Steve3", image: "Steve3 Image"),
-                Person(name: "Steve4", image: "Steve4 Image"),
-                Person(name: "Steve5", image: "Steve5 Image"),
-                Person(name: "Steve6", image: "Steve6 Image"),
-                Person(name: "Steve7", image: "Steve7 Image"),
-                Person(name: "Steve8", image: "Steve8 Image"),
+                Person(name: "Joe", image: UIImage()),
+                Person(name: "Steve", image: UIImage()),
+                Person(name: "Steve2", image: UIImage()),
+                Person(name: "Steve3", image: UIImage()),
+                Person(name: "Steve4", image: UIImage()),
+                Person(name: "Steve5", image: UIImage()),
+                Person(name: "Steve6", image: UIImage()),
+                Person(name: "Steve7", image: UIImage()),
+                Person(name: "Steve8", image: UIImage()),
             ]
             
             beforeEach {

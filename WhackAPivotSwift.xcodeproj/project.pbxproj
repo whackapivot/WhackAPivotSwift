@@ -42,6 +42,7 @@
 		AE6B4F2C1CB81772004461B6 /* TokenStoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */; };
 		AE83CBB01CB409940030378E /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83CBAF1CB409940030378E /* URLProvider.swift */; };
 		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
+		AE0EE1E31CB8690B00148FE4 /* dummy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EE1E21CB8690B00148FE4 /* dummy.png */; };
 		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
 		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0EE1E21CB8690B00148FE4 /* dummy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dummy.png; path = Images/dummy.png; sourceTree = "<group>"; };
 		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,14 @@
 				AE3B6DA61CA456100018706F /* Swinject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE0EE1E11CB866DD00148FE4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE0EE1E21CB8690B00148FE4 /* dummy.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		A35BFBAE1CB20D25004AC2AA /* Main */ = {
@@ -311,6 +321,7 @@
 			children = (
 				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
 				AE35FA781CA5E7D40083EFE2 /* Controllers */,
+				AE0EE1E11CB866DD00148FE4 /* Images */,
 				A35BFBD31CB2180C004AC2AA /* Info.plist */,
 				A35BFBAE1CB20D25004AC2AA /* Main */,
 				AE4D9DE71CA48CF40037EC59 /* Models */,
@@ -468,6 +479,7 @@
 				AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */,
 				A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */,
 				A35BFBCE1CB2157C004AC2AA /* Main.storyboard in Resources */,
+				AE0EE1E31CB8690B00148FE4 /* dummy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

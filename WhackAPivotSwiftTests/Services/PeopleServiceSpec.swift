@@ -44,8 +44,8 @@ class PeopleServiceSpec: QuickSpec {
                 ]
                 
                 let expectedPeople = [
-                    Person(name: "First Person", image: "First Image"),
-                    Person(name: "Second Person", image: "Second Image"),
+                    Person(name: "First Person", image: subject.dummyImage!),
+                    Person(name: "Second Person", image: subject.dummyImage!),
                     ]
                 
                 var promise: Promise<[Person]?, NSError> = Promise()

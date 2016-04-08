@@ -11,9 +11,9 @@ class PeopleRandomizerSpec: QuickSpec {
             
             describe("#getRandomSubset") {
                 let people = [
-                    Person(name: "P1", image: "I1"),
-                    Person(name: "P2", image: "I2"),
-                    Person(name: "P3", image: "I3"),
+                    Person(name: "P1", image: UIImage()),
+                    Person(name: "P2", image: UIImage()),
+                    Person(name: "P3", image: UIImage()),
                 ]
                 var result: PersonChallenge!
                 

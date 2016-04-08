@@ -9,6 +9,7 @@ protocol PeopleService {
 class PeopleServiceImpl: PeopleService {
     var tokenStore: TokenStore
     let session: NSURLSession
+    let dummyImage = UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("dummy", ofType: "png")!)
     
     init(tokenStore: TokenStore, session: NSURLSession) {
         self.tokenStore = tokenStore
@@ -33,7 +34,7 @@ class PeopleServiceImpl: PeopleService {
         urlRequest.setValue(cookieValue, forHTTPHeaderField: "Cookie")
         
         let completionHandler: (NSData?, NSURLResponse?, NSError?) -> () = { (data, response, error) in
-                        
+            
             guard let responseData = data else { fail() ; return }
             
             guard error == nil else { fail() ; return }
@@ -57,7 +58,7 @@ class PeopleServiceImpl: PeopleService {
                 guard location as? String == "Los Angeles" else { continue }
                 let name = "\(dict["first_name"]! as! String) \(dict["last_name"]! as! String)"
                 let image = dict["photo_url"]! as! String
-                people.append(Person(name: name, image: image))
+                people.append(Person(name: name, image: self.imageFromString(image)!))
             }
             
             promise.resolve(people)
@@ -66,5 +67,12 @@ class PeopleServiceImpl: PeopleService {
         let task = session.dataTaskWithRequest(urlRequest, completionHandler: completionHandler)
         task.resume()
         return promise
+    }
+    
+    private func imageFromString(string: String) -> UIImage? {
+        if let url = NSURL(string: string), data = NSData(contentsOfURL: url) {
+          return UIImage(data: data)
+        }
+        return dummyImage
     }
 }

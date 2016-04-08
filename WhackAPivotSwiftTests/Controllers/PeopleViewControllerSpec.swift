@@ -27,7 +27,7 @@ class PeopleViewControllerSpec: SwinjectSpec {
             
             describe("#viewDidAppear") {
                 let fakePromise = Promise<[Person]?, NSError>()
-                let people = [Person(name: "some name", image: "some image"), Person(name: "another", image: "another")]
+                let people = [Person(name: "some name", image: UIImage()), Person(name: "another", image: UIImage())]
 
                 beforeEach {
                     fakePeopleService.getPeopleReturns(fakePromise)
