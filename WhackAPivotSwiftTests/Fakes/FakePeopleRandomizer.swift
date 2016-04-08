@@ -10,17 +10,17 @@ class FakePeopleRandomizer : PeopleRandomizer, Equatable {
     }
 
     private(set) var getRandomSubsetCallCount : Int = 0
-    var getRandomSubsetStub : ((Int, [Person], Set<Person>) -> (PeopleChoicesAndTarget))?
+    var getRandomSubsetStub : ((Int, [Person], Set<Person>) -> (PersonChallenge))?
     private var getRandomSubsetArgs : Array<(Int, [Person], Set<Person>)> = []
-    func getRandomSubsetReturns(stubbedValues: (PeopleChoicesAndTarget)) {
-        self.getRandomSubsetStub = {(ofSize: Int, people: [Person], peopleToAvoid: Set<Person>) -> (PeopleChoicesAndTarget) in
+    func getRandomSubsetReturns(stubbedValues: (PersonChallenge)) {
+        self.getRandomSubsetStub = {(ofSize: Int, people: [Person], peopleToAvoid: Set<Person>) -> (PersonChallenge) in
             return stubbedValues
         }
     }
     func getRandomSubsetArgsForCall(callIndex: Int) -> (Int, [Person], Set<Person>) {
         return self.getRandomSubsetArgs[callIndex]
     }
-    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> (PeopleChoicesAndTarget) {
+    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> (PersonChallenge) {
         self.getRandomSubsetCallCount += 1
         self.getRandomSubsetArgs.append((ofSize, people, peopleToAvoid))
         return self.getRandomSubsetStub!(ofSize, people, peopleToAvoid)

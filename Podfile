@@ -3,14 +3,18 @@ use_frameworks!
 
 target 'WhackAPivotSwift' do
     pod 'Swinject'
+    pod 'RandomKit'
+    pod 'CBGPromise'
+    
     pod 'Fabric'
     pod 'Crashlytics'
-    pod 'RandomKit'
 end
 
 target 'WhackAPivotSwiftTests' do
-    pod 'RandomKit'
     pod 'Swinject'
+    pod 'RandomKit'
+    pod 'CBGPromise'
+    
     pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git'
     pod 'Quick'
 end

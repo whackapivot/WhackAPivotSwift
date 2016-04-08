@@ -1,71 +1,70 @@
-//
-//  PivotsService.swift
-//  WhackAPivotSwift
-//
-//  Created by Pivotal on 3/24/16.
-//  Copyright © 2016 Pivotal. All rights reserved.
-//
-
 import Foundation
 import UIKit
+import CBGPromise
 
 protocol PeopleService {
-    func assemblePeople(completion: () -> ())
-    func getPeople() -> [Person]
+    func getPeople() -> Promise<[Person]?, NSError>
 }
 
 class PeopleServiceImpl: PeopleService {
-    var people: [Person]!
+    var tokenStore: TokenStore
+    let session: NSURLSession
     
-    func assemblePeople(completion: () -> ()) {
-        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
-        let sessionToken = NSUserDefaults.standardUserDefaults().stringForKey("authToken")
+    init(tokenStore: TokenStore, session: NSURLSession) {
+        self.tokenStore = tokenStore
+        self.session = session
+    }
+    
+    func getPeople() -> Promise<[Person]?, NSError> {        
+        let promise = Promise<[Person]?, NSError>()
+
+        func fail() {
+            promise.reject(NSError(domain: "PeopleServiceGetPeople", code: 0, userInfo: [:]))
+            tokenStore.token = nil
+        }
+        
+        guard let sessionToken = tokenStore.token else {
+            promise.reject(NSError(domain: "PeopleServiceGetPeople", code: 0, userInfo: [:]))
+            return promise
+        }
+        
         let urlRequest = NSMutableURLRequest(URL: NSURL(string: "https://pivots.pivotallabs.com/api/users.json")!)
-        let cookieValue = "_pivots-two_session=\(sessionToken!)"
+        let cookieValue = "_pivots-two_session=\(sessionToken)"
         urlRequest.setValue(cookieValue, forHTTPHeaderField: "Cookie")
         
         let completionHandler: (NSData?, NSURLResponse?, NSError?) -> () = { (data, response, error) in
-            guard let responseData = data else {
-                print("Error: did not receive data")
-                return
-            }
-            guard error == nil else {
-                print("error calling GET on /posts/1")
-                print(error)
-                return
-            }
+            
+            guard let responseData = data else { return }
+            
+            guard error == nil else { fail() ; return }
+            
             let result: AnyObject
             do {
                 result = try NSJSONSerialization.JSONObjectWithData(responseData,
                                                                     options: [])
-            } catch  {
-                print("error trying to convert data to JSON")
-                return
-            }
+            } catch  { fail() ; return }
+            
             guard result is NSArray else {
-                print("unexpected JSON returned")
+                promise.reject(NSError(domain: "PeopleServiceGetPeople", code: 0, userInfo: [:]))
                 return
             }
             
             let resultAsArray = result as! NSArray
             
-            self.people = []
+            var people: [Person] = []
             for dict in resultAsArray {
                 guard let location = dict["location_name"] else { continue }
                 guard location as? String == "Los Angeles" else { continue }
                 let name = "\(dict["first_name"]! as! String) \(dict["last_name"]! as! String)"
                 let image = dict["photo_url"]! as! String
-                self.people.append(Person(name: name, image: image))
+                people.append(Person(name: name, image: image))
             }
             
-            completion()
+            promise.resolve(people)
         }
         
         let task = session.dataTaskWithRequest(urlRequest, completionHandler: completionHandler)
         task.resume()
-    }
-
-    func getPeople() -> [Person] {
-        return people
+        return promise
     }
 }

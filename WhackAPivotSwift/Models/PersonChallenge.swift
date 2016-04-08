@@ -1,5 +1,5 @@
 //
-//  PeopleChoicesAndTarget.swift
+//  PersonChallenge.swift
 //  WhackAPivotSwift
 //
 //  Created by Pivotal on 4/1/16.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct PeopleChoicesAndTarget: Equatable {
+struct PersonChallenge: Equatable {
     let peopleChoices: [Person]
     let target: Int
 }
 
-func ==(lhs: PeopleChoicesAndTarget, rhs: PeopleChoicesAndTarget) -> Bool {
+func ==(lhs: PersonChallenge, rhs: PersonChallenge) -> Bool {
     return lhs.peopleChoices == rhs.peopleChoices && lhs.target == rhs.target
 }

@@ -15,7 +15,7 @@ class PeopleRandomizerSpec: QuickSpec {
                     Person(name: "P2", image: "I2"),
                     Person(name: "P3", image: "I3"),
                 ]
-                var result: PeopleChoicesAndTarget!
+                var result: PersonChallenge!
                 
                 describe("When only one element remains that is not in the avoid set") {
                     beforeEach {

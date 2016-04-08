@@ -2,11 +2,11 @@ import Foundation
 import RandomKit
 
 protocol PeopleRandomizer {
-    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> PeopleChoicesAndTarget
+    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> PersonChallenge
 }
 
 class PeopleRandomizerImpl: PeopleRandomizer {
-    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> PeopleChoicesAndTarget {
+    func getRandomSubset(ofSize ofSize: Int, from people: [Person], avoiding peopleToAvoid: Set<Person>) -> PersonChallenge {
         
         let allPeople = Set(people)
         
@@ -18,6 +18,6 @@ class PeopleRandomizerImpl: PeopleRandomizer {
         
         let choices = Array([targetPerson] + remainingPeople[0..<(ofSize-1)]).shuffle()
         
-        return PeopleChoicesAndTarget(peopleChoices: choices, target: choices.indexOf(targetPerson)!)
+        return PersonChallenge(peopleChoices: choices, target: choices.indexOf(targetPerson)!)
     }
 }

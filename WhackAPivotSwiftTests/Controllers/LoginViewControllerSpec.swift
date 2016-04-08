@@ -7,19 +7,35 @@ import WebKit
 
 class LoginViewControllerSpec: SwinjectSpec {
     override func spec() {
-        describe("LoginViewController") {
+        fdescribe("LoginViewController") {
             var controller: LoginViewController!
-            var fakePeopleService: FakePeopleService!
             let testURLProvider = URLProviderImpl(baseURL: "http://cashcats.biz")
             
+            class FakeTokenStore: TokenStore {
+                var token: Token?
+            }
+            
+            class FakeUIWebView: UIWebView {
+                var loadRequestCallCount = 0
+                var loadRequestURL: NSURLRequest!
+                
+                override func loadRequest(request: NSURLRequest) {
+                    loadRequestCallCount += 1
+                    loadRequestURL = request
+                }
+            }
+            
+            let fakeWebView: FakeUIWebView = FakeUIWebView()
+            var fakeTokenStore: FakeTokenStore!
+            
             beforeEach {
-                fakePeopleService = FakePeopleService()
-                fakePeopleService.assemblePeopleReturns()
+                fakeTokenStore = FakeTokenStore()
                 
                 self.testContainer.registerForStoryboard(LoginViewController.self) { _, controller in
                     controller.urlProvider = testURLProvider
-                    controller.peopleService = fakePeopleService
+                    controller.tokenStore = fakeTokenStore
                 }
+                
                 
                 controller = self.startController("LoginViewController", storyboardName: "Main") as! LoginViewController
             }
@@ -37,29 +53,50 @@ class LoginViewControllerSpec: SwinjectSpec {
                 expect(controller.webView.request?.URL).to(equal(testURLProvider.urlForPath("/mobile_login")))
             }
             
-            describe("View did finish navigation") {
-                var authToken: String!
-                
-                class FakeUIWebView: UIWebView {
-                    var myRequest: NSURLRequest!
-                    
-                    init(url: NSURL) {
-                        self.myRequest = NSURLRequest(URL: url)
-                        super.init(frame: CGRect())
+            describe("viewDidAppear") {
+                beforeEach {
+                    controller.webView = fakeWebView
+                }
+                describe("When the token is present in the TokenStore") {
+                    beforeEach {
+                        fakeTokenStore.token = "some token"
+                        controller.viewDidAppear(false)
                     }
                     
-                    required init(coder: NSCoder) {
-                        fatalError("init(coder:) has not been implemented")
+                    it("should segue to the PeopleViewController") {
+                        expect(controller.seguePerformed).to(beTruthy())
+                    }
+                }
+                describe("When the token is not present in the TokenStore") {
+                    beforeEach {
+                        controller.viewDidAppear(false)
                     }
                     
-                    override var request: NSURLRequest {
-                        return myRequest
+                    it("should send a loadRequest message to the WebView") {
+                        expect(fakeWebView.loadRequestCallCount).to(equal(1))
+                        expect(fakeWebView.loadRequestURL.URL!.absoluteString).to(equal("http://cashcats.biz/mobile_login"))
+                    }
+                }
+            }
+            
+            describe("View finished loading") {
+                class FakeWebView: UIWebView {
+                    private var savedRequest: NSURLRequest?
+                    override var request: NSURLRequest? {
+                        get {
+                            return savedRequest
+                        }
+                        set(request) {
+                            savedRequest = request
+                        }
                     }
                 }
                 
-                var fakeWebView: FakeUIWebView!
+                var authToken: String!
+                var fakeWebView = FakeWebView()
                 
                 beforeEach {
+                    fakeWebView = FakeWebView()
                     authToken = controller.authToken
                     NSUserDefaults.standardUserDefaults().removeObjectForKey(authToken)
                     NSUserDefaults.standardUserDefaults().synchronize()
@@ -67,22 +104,23 @@ class LoginViewControllerSpec: SwinjectSpec {
                 
                 describe("When wrong URL has been loaded") {
                     beforeEach {
-                        fakeWebView = FakeUIWebView(url: NSURL(string: "http://example.com/")!)
+                        fakeWebView.request = NSURLRequest(URL: NSURL(string: "http://example.com/")!)
+                        controller.webView = fakeWebView
                         controller.webViewDidFinishLoad(fakeWebView)
                     }
                     
-                    it("should not store an auth token in NSUserDefaults") {
-                        expect(NSUserDefaults.standardUserDefaults().objectForKey(authToken)).to(beNil())
+                    it("should not store a token") {
+                        expect(fakeTokenStore.token).to(beNil())
                     }
                 }
                 
                 describe("when the right URL has been loaded") {
-                    let url = testURLProvider.urlForPath("/mobile_success")
                     var cookie: NSHTTPCookie!
                     var cookieJar: NSHTTPCookieStorage!
                     
                     beforeEach {
-                        fakeWebView = FakeUIWebView(url: url)
+                        let url = testURLProvider.urlForPath(controller.successPath)
+                        fakeWebView.request = NSURLRequest(URL: url)
                         cookie = NSHTTPCookie(properties: [
                             NSHTTPCookiePath:"\\",
                             NSHTTPCookieOriginURL: url,
@@ -97,22 +135,12 @@ class LoginViewControllerSpec: SwinjectSpec {
                             controller.webViewDidFinishLoad(fakeWebView)
                         }
                         
-                        it("should store the auth token in NSUserDefaults") {
-                            expect(NSUserDefaults.standardUserDefaults().stringForKey(authToken)).to(equal(cookie.value))
+                        fit("should save the cookie to the TokenStore") {
+                            expect(fakeTokenStore.token).to(equal(cookie.value))
                         }
                         
-                        it("should tell the people service to assemble the people") {
-                            expect(fakePeopleService.assemblePeopleCallCount).to(equal(1))
-                        }
-                        
-                        describe("When the people are assembled") {
-                            beforeEach {
-                                fakePeopleService.assemblePeopleArgsForCall(0)()
-                            }
-                            
-                            it("should segue to the next screen") {
-                                expect(controller.seguePerformed).to(beTruthy())
-                            }
+                        it("should segue to the next screen") {
+                            expect(controller.seguePerformed).to(beTruthy())
                         }
                     }
                     
@@ -122,12 +150,8 @@ class LoginViewControllerSpec: SwinjectSpec {
                             controller.webViewDidFinishLoad(fakeWebView)
                         }
                         
-                        it("should not store the auth token in NSUserDefaults") {
-                            expect(NSUserDefaults.standardUserDefaults().stringForKey(authToken)).to(beNil())
-                        }
-                        
-                        it("should not tell the people service to assemble the people") {
-                            expect(fakePeopleService.assemblePeopleCallCount).to(equal(0))
+                        it("should not segue to the next screen") {
+                            expect(controller.seguePerformed).to(beFalsy())
                         }
                     }
                 }

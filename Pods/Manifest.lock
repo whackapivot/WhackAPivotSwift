@@ -1,4 +1,5 @@
 PODS:
+  - CBGPromise (0.2.0)
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
@@ -8,6 +9,7 @@ PODS:
   - Swinject (1.1.1)
 
 DEPENDENCIES:
+  - CBGPromise
   - Crashlytics
   - Fabric
   - Nimble (from `https://github.com/Quick/Nimble.git`)
@@ -25,6 +27,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Quick/Nimble.git
 
 SPEC CHECKSUMS:
+  CBGPromise: d41115c73380ae4b698b8e9cc958799a704b9764
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Nimble: 2a0cfc75e3d7e80a715a9fbe35f84f37a200b785

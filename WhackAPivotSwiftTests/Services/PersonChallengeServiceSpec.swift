@@ -4,11 +4,10 @@ import Swinject
 
 @testable import WhackAPivotSwift
 
-class PeopleChoicesAndTargetServiceSpec: SwinjectSpec {
+class PersonChallengeServiceSpec: SwinjectSpec {
     override func spec() {
-        describe("PeopleChoicesAndTargetService") {
-            var peopleChoicesAndTargetService: PeopleChoicesAndTargetService!
-            var fakePeopleService: FakePeopleService!
+        fdescribe("PersonChallengeService") {
+            var personChallengeService: PersonChallengeService!
             var fakePeopleRandomizer: FakePeopleRandomizer!
             
             let fakePeople = [
@@ -24,29 +23,27 @@ class PeopleChoicesAndTargetServiceSpec: SwinjectSpec {
             ]
             
             beforeEach {
-                fakePeopleService = FakePeopleService()
                 fakePeopleRandomizer = FakePeopleRandomizer()
                 
-                self.testContainer.register(PeopleChoicesAndTargetService.self) { _ in
-                    PeopleChoicesAndTargetServiceImpl(peopleService: fakePeopleService, peopleRandomizer: fakePeopleRandomizer)
+                self.testContainer.register(PersonChallengeService.self) { _ in
+                    PersonChallengeServiceImpl(peopleRandomizer: fakePeopleRandomizer)
                 }
                 
-                fakePeopleService.getPeopleReturns(fakePeople)
-                
-                peopleChoicesAndTargetService = self.testContainer.resolve(PeopleChoicesAndTargetService.self)!
+                personChallengeService = self.testContainer.resolve(PersonChallengeService.self)!
+                personChallengeService.startNewGame(fakePeople, peoplePerChallenge: 6)
             }
             
-            describe("#provide") {
-                var result: PeopleChoicesAndTarget!
-                let stubbedResult = PeopleChoicesAndTarget(peopleChoices: [fakePeople[1]], target: 0)
+            describe("#getChallenge") {
+                let stubbedResult = PersonChallenge(peopleChoices: [fakePeople[1]], target: 0)
+                var result: PersonChallenge?
                 
                 beforeEach {
                     fakePeopleRandomizer.getRandomSubsetReturns(stubbedResult)
                     
-                    result = peopleChoicesAndTargetService.provide()
+                    result = personChallengeService.getChallenge()
                 }
                 
-                it("should obtain a PeopleChoicesAndTarget from the randomizer") {
+                it("should obtain a PersonChallenge from the randomizer") {
                     expect(fakePeopleRandomizer.getRandomSubsetCallCount).to(equal(1));
                     
                     let args = fakePeopleRandomizer.getRandomSubsetArgsForCall(0)
@@ -59,12 +56,12 @@ class PeopleChoicesAndTargetServiceSpec: SwinjectSpec {
                 
                 describe("When calling a second time") {
                     var personToAvoid: Person!
-                    let secondStubbedResult = PeopleChoicesAndTarget(peopleChoices: [fakePeople[0]], target: 0)
+                    let secondStubbedResult = PersonChallenge(peopleChoices: [fakePeople[0]], target: 0)
                     
                     beforeEach {
-                        personToAvoid = stubbedResult.peopleChoices[result.target];
+                        personToAvoid = stubbedResult.peopleChoices[result!.target];
                         fakePeopleRandomizer.getRandomSubsetReturns(secondStubbedResult)
-                        result = peopleChoicesAndTargetService.provide()
+                        result = personChallengeService.getChallenge()
                     }
                     
                     it("should call the randomizer with the previous target in people to avoid") {
@@ -81,16 +78,13 @@ class PeopleChoicesAndTargetServiceSpec: SwinjectSpec {
                     beforeEach {
                         let peopleIndices = Array([0] + Array(2...8))
                         for i: Int in peopleIndices {
-                            fakePeopleRandomizer.getRandomSubsetReturns(PeopleChoicesAndTarget(peopleChoices: [fakePeople[i]], target: 0))
-                            peopleChoicesAndTargetService.provide()
+                            fakePeopleRandomizer.getRandomSubsetReturns(PersonChallenge(peopleChoices: [fakePeople[i]], target: 0))
+                            personChallengeService.getChallenge()
                             }
                     }
                     
-                    it("starts over again with no one to avoid") {
-                        peopleChoicesAndTargetService.provide()
-                        NSLog("Call count is \(fakePeopleRandomizer.getRandomSubsetCallCount)")
-                        let args = fakePeopleRandomizer.getRandomSubsetArgsForCall(9)
-                        expect(args.2).to(equal([]))
+                    it("returns nil") {
+                        expect(personChallengeService.getChallenge()).to(beNil())
                     }
                 }
             }

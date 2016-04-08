@@ -9,7 +9,6 @@
         <!--Login View Controller-->
         <scene sceneID="xwB-29-9W0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iz5-mz-PVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="LoginViewController" id="Ujx-wK-sQy" customClass="LoginViewController" customModule="WhackAPivotSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" id="Fr9-62-N1Y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -18,16 +17,50 @@
                     </webView>
                     <connections>
                         <outlet property="webView" destination="Fr9-62-N1Y" id="0vu-rw-lMn"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="MainView" id="Mja-Fz-w8l"/>
+                        <segue destination="yd4-tT-L1a" kind="show" identifier="PeopleViewController" id="Zwz-RD-F2g"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iz5-mz-PVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="806"/>
+            <point key="canvasLocation" x="-455" y="800"/>
         </scene>
-        <!--View Controller-->
+        <!--People View Controller-->
+        <scene sceneID="CDq-nD-1ga">
+            <objects>
+                <viewController storyboardIdentifier="PeopleViewController" id="yd4-tT-L1a" customClass="PeopleViewController" customModule="WhackAPivotSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ott-Up-DL1"/>
+                        <viewControllerLayoutGuide type="bottom" id="J93-Tq-c60"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yit-Da-XmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading People ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNx-sP-iXd">
+                                <rect key="frame" x="232" y="290" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GNx-sP-iXd" firstAttribute="centerY" secondItem="Yit-Da-XmJ" secondAttribute="centerY" id="aDq-i0-9Rs"/>
+                            <constraint firstItem="GNx-sP-iXd" firstAttribute="centerX" secondItem="Yit-Da-XmJ" secondAttribute="centerX" id="gkP-1G-CAB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="GameViewController" id="ROo-O5-gCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6XL-KG-RgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="806"/>
+        </scene>
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="WhackAPivotSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="BYZ-38-t0r" customClass="GameViewController" customModule="WhackAPivotSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

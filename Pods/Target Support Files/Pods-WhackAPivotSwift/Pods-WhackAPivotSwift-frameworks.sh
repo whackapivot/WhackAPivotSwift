@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-WhackAPivotSwift/CBGPromise.framework"
   install_framework "Pods-WhackAPivotSwift/RandomKit.framework"
   install_framework "Pods-WhackAPivotSwift/Swinject.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-WhackAPivotSwift/CBGPromise.framework"
   install_framework "Pods-WhackAPivotSwift/RandomKit.framework"
   install_framework "Pods-WhackAPivotSwift/Swinject.framework"
 fi
