@@ -8,7 +8,7 @@ import CBGPromise
 
 class PeopleViewControllerSpec: SwinjectSpec {
     override func spec() {
-        fdescribe("PeopleViewController") {
+        describe("PeopleViewController") {
             var controller: PeopleViewController!
             var fakePeopleService: FakePeopleService!
             var fakePeopleStore: FakePeopleStore!
@@ -43,7 +43,7 @@ class PeopleViewControllerSpec: SwinjectSpec {
                         
                     }
                     it("should segue to the PeopleController") {
-                        expect(controller.seguePerformed).to(beTruthy())
+                        expect(controller.segueToPeoplePerformed).to(beTruthy())
                     }
                 }
                 describe("When people service fails") {
@@ -51,8 +51,8 @@ class PeopleViewControllerSpec: SwinjectSpec {
                         fakePromise.reject(NSError(domain: "", code: 0, userInfo: nil))
                     }
 
-                    it("should go back to root of the view controller stack") {
-                        expect(controller.popPerformed).to(beTruthy())
+                    it("should segue to the LoginController") {
+                        expect(controller.segueToLoginPerformed).to(beTruthy())
                     }
                     
                 }

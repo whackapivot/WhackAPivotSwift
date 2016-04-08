@@ -6,7 +6,7 @@ import Swinject
 
 class PersonChallengeServiceSpec: SwinjectSpec {
     override func spec() {
-        fdescribe("PersonChallengeService") {
+        describe("PersonChallengeService") {
             var personChallengeService: PersonChallengeService!
             var fakePeopleRandomizer: FakePeopleRandomizer!
             

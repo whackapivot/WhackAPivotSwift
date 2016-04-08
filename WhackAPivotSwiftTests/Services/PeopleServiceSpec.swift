@@ -64,9 +64,6 @@ class PeopleServiceSpec: QuickSpec {
                         }
                     }
                     describe("when the network call fails") {
-                        it("returns nil") {
-                            
-                        }
                     }
                 }
             }

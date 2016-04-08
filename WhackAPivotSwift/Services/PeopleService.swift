@@ -33,8 +33,8 @@ class PeopleServiceImpl: PeopleService {
         urlRequest.setValue(cookieValue, forHTTPHeaderField: "Cookie")
         
         let completionHandler: (NSData?, NSURLResponse?, NSError?) -> () = { (data, response, error) in
-            
-            guard let responseData = data else { return }
+                        
+            guard let responseData = data else { fail() ; return }
             
             guard error == nil else { fail() ; return }
             

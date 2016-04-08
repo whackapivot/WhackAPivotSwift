@@ -7,7 +7,7 @@ import WebKit
 
 class LoginViewControllerSpec: SwinjectSpec {
     override func spec() {
-        fdescribe("LoginViewController") {
+        describe("LoginViewController") {
             var controller: LoginViewController!
             let testURLProvider = URLProviderImpl(baseURL: "http://cashcats.biz")
             
@@ -135,7 +135,7 @@ class LoginViewControllerSpec: SwinjectSpec {
                             controller.webViewDidFinishLoad(fakeWebView)
                         }
                         
-                        fit("should save the cookie to the TokenStore") {
+                        it("should save the cookie to the TokenStore") {
                             expect(fakeTokenStore.token).to(equal(cookie.value))
                         }
                         

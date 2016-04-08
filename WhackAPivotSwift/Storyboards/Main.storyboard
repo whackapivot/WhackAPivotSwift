@@ -51,6 +51,7 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="GameViewController" id="ROo-O5-gCL"/>
+                        <segue destination="Ujx-wK-sQy" kind="show" identifier="ReturnToLogin" id="4Fg-0o-NfR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XL-KG-RgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
