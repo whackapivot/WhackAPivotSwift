@@ -7,42 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */; };
-		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
-		A35BFBA31CB20C9B004AC2AA /* PersonChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA01CB20C9B004AC2AA /* PersonChallengeService.swift */; };
-		A35BFBA41CB20C9B004AC2AA /* PeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */; };
-		A35BFBA51CB20C9B004AC2AA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */; };
-		A35BFBA71CB20CD8004AC2AA /* PersonDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */; };
-		A35BFBAA1CB20CE8004AC2AA /* PersonChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA81CB20CE8004AC2AA /* PersonChallenge.swift */; };
-		A35BFBAB1CB20CE8004AC2AA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA91CB20CE8004AC2AA /* Person.swift */; };
-		A35BFBAD1CB20CFC004AC2AA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBAC1CB20CFC004AC2AA /* GameViewController.swift */; };
-		A35BFBB91CB21194004AC2AA /* PersonChallengeServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBB81CB21194004AC2AA /* PersonChallengeServiceSpec.swift */; };
-		A35BFBBB1CB2119E004AC2AA /* GameViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBA1CB2119E004AC2AA /* GameViewControllerSpec.swift */; };
-		A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */; };
-		A35BFBC81CB2127E004AC2AA /* FakePersonChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC51CB2127E004AC2AA /* FakePersonChallengeService.swift */; };
-		A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */; };
-		A35BFBCE1CB2157C004AC2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCC1CB2157C004AC2AA /* Main.storyboard */; };
-		A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */; };
-		A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */; };
-		A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */; };
-		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
-		AE6B4F291CB7F96F004461B6 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F281CB7F96F004461B6 /* PeopleViewController.swift */; };
-		AE6B4F2C1CB81772004461B6 /* TokenStoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */; };
-		AE6B4F2E1CB82FFA004461B6 /* PeopleViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F2D1CB82FFA004461B6 /* PeopleViewControllerSpec.swift */; };
-		AE77635F1CB4DF2800BC7853 /* FakePeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */; };
-		AE7763611CB6C69000BC7853 /* PeopleServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7763601CB6C69000BC7853 /* PeopleServiceSpec.swift */; };
-		AE7763641CB6D08300BC7853 /* PeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7763631CB6D08300BC7853 /* PeopleStore.swift */; };
-		AE7763681CB6D37300BC7853 /* FakePeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7763671CB6D37300BC7853 /* FakePeopleStore.swift */; };
-		AE77636C1CB6D75000BC7853 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77636B1CB6D75000BC7853 /* TokenStore.swift */; };
-		AE7763701CB6D82B00BC7853 /* FakeTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77636F1CB6D82B00BC7853 /* FakeTokenStore.swift */; };
-		AE77637F1CB7152B00BC7853 /* FakePersonDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77637E1CB7152B00BC7853 /* FakePersonDisplayer.swift */; };
-		AE80D80F1CB33F8A00AF3488 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */; };
-		AE80D8111CB33FE900AF3488 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */; };
-		AE83CBB01CB409940030378E /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83CBAF1CB409940030378E /* URLProvider.swift */; };
 		AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */; };
 		AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */; };
-		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
 		AEBB8F7B1CB318420050A0D4 /* FakePeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */; };
+		AE77635F1CB4DF2800BC7853 /* FakePeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */; };
+		AE7763681CB6D37300BC7853 /* FakePeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7763671CB6D37300BC7853 /* FakePeopleStore.swift */; };
+		A35BFBC81CB2127E004AC2AA /* FakePersonChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBC51CB2127E004AC2AA /* FakePersonChallengeService.swift */; };
+		AE77637F1CB7152B00BC7853 /* FakePersonDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77637E1CB7152B00BC7853 /* FakePersonDisplayer.swift */; };
+		AE7763701CB6D82B00BC7853 /* FakeTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77636F1CB6D82B00BC7853 /* FakeTokenStore.swift */; };
+		A35BFBAD1CB20CFC004AC2AA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBAC1CB20CFC004AC2AA /* GameViewController.swift */; };
+		A35BFBBB1CB2119E004AC2AA /* GameViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBA1CB2119E004AC2AA /* GameViewControllerSpec.swift */; };
+		A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */; };
+		AE80D80F1CB33F8A00AF3488 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */; };
+		AE80D8111CB33FE900AF3488 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */; };
+		A35BFBCE1CB2157C004AC2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCC1CB2157C004AC2AA /* Main.storyboard */; };
+		A35BFBA41CB20C9B004AC2AA /* PeopleRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */; };
+		A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */; };
+		A35BFBA51CB20C9B004AC2AA /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */; };
+		AE7763611CB6C69000BC7853 /* PeopleServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7763601CB6C69000BC7853 /* PeopleServiceSpec.swift */; };
+		AE7763641CB6D08300BC7853 /* PeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7763631CB6D08300BC7853 /* PeopleStore.swift */; };
+		AE6B4F291CB7F96F004461B6 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F281CB7F96F004461B6 /* PeopleViewController.swift */; };
+		AE6B4F2E1CB82FFA004461B6 /* PeopleViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F2D1CB82FFA004461B6 /* PeopleViewControllerSpec.swift */; };
+		A35BFBAB1CB20CE8004AC2AA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA91CB20CE8004AC2AA /* Person.swift */; };
+		A35BFBAA1CB20CE8004AC2AA /* PersonChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA81CB20CE8004AC2AA /* PersonChallenge.swift */; };
+		A35BFBA31CB20C9B004AC2AA /* PersonChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA01CB20C9B004AC2AA /* PersonChallengeService.swift */; };
+		A35BFBB91CB21194004AC2AA /* PersonChallengeServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBB81CB21194004AC2AA /* PersonChallengeServiceSpec.swift */; };
+		A35BFBA71CB20CD8004AC2AA /* PersonDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */; };
+		65F99F08E14C94BB9ECBB64C /* Pods_WhackAPivotSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */; };
+		9CE9D6C16A1DDBB43F38A4F9 /* Pods_WhackAPivotSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */; };
+		A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */; };
+		A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */; };
+		A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */; };
+		AE77636C1CB6D75000BC7853 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE77636B1CB6D75000BC7853 /* TokenStore.swift */; };
+		AE6B4F2C1CB81772004461B6 /* TokenStoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */; };
+		AE83CBB01CB409940030378E /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE83CBAF1CB409940030378E /* URLProvider.swift */; };
+		AE9C65881CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */; };
+		AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35FAE71CAAEB0C0083EFE2 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,57 +63,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		A35BFBA01CB20C9B004AC2AA /* PersonChallengeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonChallengeService.swift; path = Services/PersonChallengeService.swift; sourceTree = "<group>"; };
-		A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleRandomizer.swift; path = Services/PeopleRandomizer.swift; sourceTree = "<group>"; };
-		A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleService.swift; path = Services/PeopleService.swift; sourceTree = "<group>"; };
-		A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDisplayer.swift; path = Utilities/PersonDisplayer.swift; sourceTree = "<group>"; };
-		A35BFBA81CB20CE8004AC2AA /* PersonChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonChallenge.swift; path = Models/PersonChallenge.swift; sourceTree = "<group>"; };
-		A35BFBA91CB20CE8004AC2AA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
-		A35BFBAC1CB20CFC004AC2AA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = Controllers/GameViewController.swift; sourceTree = "<group>"; };
-		A35BFBB81CB21194004AC2AA /* PersonChallengeServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonChallengeServiceSpec.swift; sourceTree = "<group>"; };
-		A35BFBBA1CB2119E004AC2AA /* GameViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerSpec.swift; sourceTree = "<group>"; };
-		A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
-		A35BFBC51CB2127E004AC2AA /* FakePersonChallengeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePersonChallengeService.swift; path = Fakes/FakePersonChallengeService.swift; sourceTree = "<group>"; };
-		A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A35BFBCC1CB2157C004AC2AA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
-		A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
-		A35BFBD31CB2180C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A35BFBD51CB2189C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
-		A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRandomizerSpec.swift; sourceTree = "<group>"; };
-		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
-		AE3B6DA61CA456100018706F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "Pods/../build/Debug-iphoneos/Swinject.framework"; sourceTree = "<group>"; };
-		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
-		AE6B4F281CB7F96F004461B6 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = Controllers/PeopleViewController.swift; sourceTree = "<group>"; };
-		AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStoreSpec.swift; sourceTree = "<group>"; };
-		AE6B4F2D1CB82FFA004461B6 /* PeopleViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewControllerSpec.swift; sourceTree = "<group>"; };
-		AE6B4F321CB841E1004461B6 /* FakePersonChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePersonChallengeService.swift; sourceTree = "<group>"; };
-		AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleService.swift; path = Fakes/FakePeopleService.swift; sourceTree = "<group>"; };
-		AE7763601CB6C69000BC7853 /* PeopleServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceSpec.swift; sourceTree = "<group>"; };
-		AE7763631CB6D08300BC7853 /* PeopleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleStore.swift; sourceTree = "<group>"; };
-		AE7763671CB6D37300BC7853 /* FakePeopleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleStore.swift; path = Fakes/FakePeopleStore.swift; sourceTree = "<group>"; };
-		AE77636B1CB6D75000BC7853 /* TokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
-		AE77636F1CB6D82B00BC7853 /* FakeTokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakeTokenStore.swift; path = Fakes/FakeTokenStore.swift; sourceTree = "<group>"; };
-		AE77637E1CB7152B00BC7853 /* FakePersonDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePersonDisplayer.swift; path = Fakes/FakePersonDisplayer.swift; sourceTree = "<group>"; };
-		AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpec.swift; sourceTree = "<group>"; };
-		AE83CBAF1CB409940030378E /* URLProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
-		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9C65671CA4508E0017DDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
-		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FakePeopleRandomizer.swift; path = Fakes/FakePeopleRandomizer.swift; sourceTree = "<group>"; };
+		AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleService.swift; path = Fakes/FakePeopleService.swift; sourceTree = "<group>"; };
+		AE7763671CB6D37300BC7853 /* FakePeopleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePeopleStore.swift; path = Fakes/FakePeopleStore.swift; sourceTree = "<group>"; };
+		A35BFBC51CB2127E004AC2AA /* FakePersonChallengeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePersonChallengeService.swift; path = Fakes/FakePersonChallengeService.swift; sourceTree = "<group>"; };
+		AE6B4F321CB841E1004461B6 /* FakePersonChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePersonChallengeService.swift; sourceTree = "<group>"; };
+		AE77637E1CB7152B00BC7853 /* FakePersonDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakePersonDisplayer.swift; path = Fakes/FakePersonDisplayer.swift; sourceTree = "<group>"; };
+		AE77636F1CB6D82B00BC7853 /* FakeTokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FakeTokenStore.swift; path = Fakes/FakeTokenStore.swift; sourceTree = "<group>"; };
+		A35BFBAC1CB20CFC004AC2AA /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = Controllers/GameViewController.swift; sourceTree = "<group>"; };
+		A35BFBBA1CB2119E004AC2AA /* GameViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewControllerSpec.swift; sourceTree = "<group>"; };
+		A35BFBD31CB2180C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35BFBD51CB2189C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9C65891CA4508E0017DDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpec.swift; sourceTree = "<group>"; };
+		A35BFBCC1CB2157C004AC2AA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		AE3B6DA41CA456100018706F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleRandomizer.swift; path = Services/PeopleRandomizer.swift; sourceTree = "<group>"; };
+		A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRandomizerSpec.swift; sourceTree = "<group>"; };
+		A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleService.swift; path = Services/PeopleService.swift; sourceTree = "<group>"; };
+		AE7763601CB6C69000BC7853 /* PeopleServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceSpec.swift; sourceTree = "<group>"; };
+		AE7763631CB6D08300BC7853 /* PeopleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleStore.swift; sourceTree = "<group>"; };
+		AE6B4F281CB7F96F004461B6 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleViewController.swift; path = Controllers/PeopleViewController.swift; sourceTree = "<group>"; };
+		AE6B4F2D1CB82FFA004461B6 /* PeopleViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewControllerSpec.swift; sourceTree = "<group>"; };
+		A35BFBA91CB20CE8004AC2AA /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Models/Person.swift; sourceTree = "<group>"; };
+		A35BFBA81CB20CE8004AC2AA /* PersonChallenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonChallenge.swift; path = Models/PersonChallenge.swift; sourceTree = "<group>"; };
+		A35BFBA01CB20C9B004AC2AA /* PersonChallengeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonChallengeService.swift; path = Services/PersonChallengeService.swift; sourceTree = "<group>"; };
+		A35BFBB81CB21194004AC2AA /* PersonChallengeServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonChallengeServiceSpec.swift; sourceTree = "<group>"; };
+		A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDisplayer.swift; path = Utilities/PersonDisplayer.swift; sourceTree = "<group>"; };
+		9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig"; sourceTree = "<group>"; };
+		6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhackAPivotSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhackAPivotSwiftTests/Pods-WhackAPivotSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		24ADDDE900C94BD3ACDDFA3D /* Pods_WhackAPivotSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3B6DAA1CA45BF30018706F /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_WhackAPivotSwiftTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_WhackAPivotSwiftTests.framework"; sourceTree = "<group>"; };
 		EBF3A08CCB51F4265A9DB5E2 /* Pods_WhackAPivotSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhackAPivotSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3B6DA51CA456100018706F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		AE3B6DA61CA456100018706F /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = "Pods/../build/Debug-iphoneos/Swinject.framework"; sourceTree = "<group>"; };
+		A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwinjectSpec.swift; sourceTree = "<group>"; };
+		A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Setup.swift"; sourceTree = "<group>"; };
+		A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		AE77636B1CB6D75000BC7853 /* TokenStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenStoreSpec.swift; sourceTree = "<group>"; };
+		AE83CBAF1CB409940030378E /* URLProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
+		AE9C65641CA4508E0017DDF2 /* WhackAPivotSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhackAPivotSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9C65781CA4508E0017DDF2 /* WhackAPivotSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackAPivotSwiftUITests.swift; sourceTree = "<group>"; };
+		AE9C65831CA4508E0017DDF2 /* WhackAPivotSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackAPivotSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE35FAE71CAAEB0C0083EFE2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,15 +143,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12D989BDB9DAC914AF963D17 /* Pods */ = {
+		AE9C655B1CA4508E0017DDF2 = {
 			isa = PBXGroup;
 			children = (
-				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
-				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
-				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
-				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
+				8554DB280D7803B8844523E9 /* Frameworks */,
+				12D989BDB9DAC914AF963D17 /* Pods */,
+				AE9C65651CA4508E0017DDF2 /* Products */,
+				AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */,
+				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
+				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
 			);
-			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE35FA781CA5E7D40083EFE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A35BFBAC1CB20CFC004AC2AA /* GameViewController.swift */,
+				AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */,
+				AE6B4F281CB7F96F004461B6 /* PeopleViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AE35FA791CA5E7EC0083EFE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A35BFBBA1CB2119E004AC2AA /* GameViewControllerSpec.swift */,
+				AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */,
+				AE6B4F2D1CB82FFA004461B6 /* PeopleViewControllerSpec.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE35FA7A1CA5E7F50083EFE2 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */,
+				AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */,
+				AE7763671CB6D37300BC7853 /* FakePeopleStore.swift */,
+				A35BFBC51CB2127E004AC2AA /* FakePersonChallengeService.swift */,
+				AE77637E1CB7152B00BC7853 /* FakePersonDisplayer.swift */,
+				AE77636F1CB6D82B00BC7853 /* FakeTokenStore.swift */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 		8554DB280D7803B8844523E9 /* Frameworks */ = {
@@ -167,15 +201,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A35BFB9B1CB1EC1F004AC2AA /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */,
-				AE83CBAF1CB409940030378E /* URLProvider.swift */,
-			);
-			name = Utilities;
-			sourceTree = "<group>";
-		};
 		A35BFBAE1CB20D25004AC2AA /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,122 +212,24 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		AE2A3CD71CAF2116006E3C54 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A35BFBB81CB21194004AC2AA /* PersonChallengeServiceSpec.swift */,
-				A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */,
-				AE7763601CB6C69000BC7853 /* PeopleServiceSpec.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */,
-				A35BFBCC1CB2157C004AC2AA /* Main.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
-		AE35FA781CA5E7D40083EFE2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AE80D80E1CB33F8A00AF3488 /* LoginViewController.swift */,
-				A35BFBAC1CB20CFC004AC2AA /* GameViewController.swift */,
-				AE6B4F281CB7F96F004461B6 /* PeopleViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		AE35FA791CA5E7EC0083EFE2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				AE80D8101CB33FE900AF3488 /* LoginViewControllerSpec.swift */,
-				A35BFBBA1CB2119E004AC2AA /* GameViewControllerSpec.swift */,
-				AE6B4F2D1CB82FFA004461B6 /* PeopleViewControllerSpec.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AE35FA7A1CA5E7F50083EFE2 /* Fakes */ = {
-			isa = PBXGroup;
-			children = (
-				AE77636F1CB6D82B00BC7853 /* FakeTokenStore.swift */,
-				AE7763671CB6D37300BC7853 /* FakePeopleStore.swift */,
-				A35BFBC51CB2127E004AC2AA /* FakePersonChallengeService.swift */,
-				AEBB8F7A1CB318150050A0D4 /* FakePeopleRandomizer.swift */,
-				AE77635E1CB4DF2800BC7853 /* FakePeopleService.swift */,
-				AE77637E1CB7152B00BC7853 /* FakePersonDisplayer.swift */,
-			);
-			name = Fakes;
-			sourceTree = "<group>";
-		};
-		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */,
-			);
-			path = Support;
-			sourceTree = "<group>";
-		};
-		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A35BFBA01CB20C9B004AC2AA /* PersonChallengeService.swift */,
-				A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */,
-				A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */,
-				AE6B4F311CB841E1004461B6 /* fakes */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
 		AE4D9DE71CA48CF40037EC59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A35BFBA81CB20CE8004AC2AA /* PersonChallenge.swift */,
 				A35BFBA91CB20CE8004AC2AA /* Person.swift */,
+				A35BFBA81CB20CE8004AC2AA /* PersonChallenge.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
-		AE6B4F2A1CB81732004461B6 /* Stores */ = {
+		12D989BDB9DAC914AF963D17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */,
+				9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */,
+				DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */,
+				6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */,
+				E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */,
 			);
-			path = Stores;
-			sourceTree = "<group>";
-		};
-		AE6B4F311CB841E1004461B6 /* fakes */ = {
-			isa = PBXGroup;
-			children = (
-				AE6B4F321CB841E1004461B6 /* FakePersonChallengeService.swift */,
-			);
-			name = fakes;
-			path = Services/fakes;
-			sourceTree = "<group>";
-		};
-		AE7763621CB6D05700BC7853 /* Stores */ = {
-			isa = PBXGroup;
-			children = (
-				AE7763631CB6D08300BC7853 /* PeopleStore.swift */,
-				AE77636B1CB6D75000BC7853 /* TokenStore.swift */,
-			);
-			path = Stores;
-			sourceTree = "<group>";
-		};
-		AE9C655B1CA4508E0017DDF2 = {
-			isa = PBXGroup;
-			children = (
-				8554DB280D7803B8844523E9 /* Frameworks */,
-				12D989BDB9DAC914AF963D17 /* Pods */,
-				AE9C65651CA4508E0017DDF2 /* Products */,
-				AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */,
-				AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */,
-				AE9C65861CA4508E0017DDF2 /* WhackAPivotSwiftUITests */,
-			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AE9C65651CA4508E0017DDF2 /* Products */ = {
@@ -315,16 +242,80 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AE2A3CD71CAF2116006E3C54 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */,
+				AE7763601CB6C69000BC7853 /* PeopleServiceSpec.swift */,
+				A35BFBB81CB21194004AC2AA /* PersonChallengeServiceSpec.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AE4D9DE31CA48C2B0037EC59 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A35BFBA11CB20C9B004AC2AA /* PeopleRandomizer.swift */,
+				A35BFBA21CB20C9B004AC2AA /* PeopleService.swift */,
+				A35BFBA01CB20C9B004AC2AA /* PersonChallengeService.swift */,
+				AE6B4F311CB841E1004461B6 /* fakes */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		AE6B4F2A1CB81732004461B6 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				AE6B4F2B1CB81772004461B6 /* TokenStoreSpec.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		AE7763621CB6D05700BC7853 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				AE7763631CB6D08300BC7853 /* PeopleStore.swift */,
+				AE77636B1CB6D75000BC7853 /* TokenStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		AE35FA771CA5E7C20083EFE2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A35BFBCB1CB2157C004AC2AA /* LaunchScreen.storyboard */,
+				A35BFBCC1CB2157C004AC2AA /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AE35FA7C1CA5EBFF0083EFE2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A35BFBBC1CB211A6004AC2AA /* SwinjectSpec.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A35BFB9B1CB1EC1F004AC2AA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A35BFBA61CB20CD8004AC2AA /* PersonDisplayer.swift */,
+				AE83CBAF1CB409940030378E /* URLProvider.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		AE9C65661CA4508E0017DDF2 /* WhackAPivotSwift */ = {
 			isa = PBXGroup;
 			children = (
-				AE7763621CB6D05700BC7853 /* Stores */,
 				AE9C656E1CA4508E0017DDF2 /* Assets.xcassets */,
 				AE35FA781CA5E7D40083EFE2 /* Controllers */,
 				A35BFBD31CB2180C004AC2AA /* Info.plist */,
 				A35BFBAE1CB20D25004AC2AA /* Main */,
 				AE4D9DE71CA48CF40037EC59 /* Models */,
 				AE4D9DE31CA48C2B0037EC59 /* Services */,
+				AE7763621CB6D05700BC7853 /* Stores */,
 				AE35FA771CA5E7C20083EFE2 /* Storyboards */,
 				A35BFB9B1CB1EC1F004AC2AA /* Utilities */,
 			);
@@ -334,11 +325,11 @@
 		AE9C657B1CA4508E0017DDF2 /* WhackAPivotSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				AE6B4F2A1CB81732004461B6 /* Stores */,
 				AE35FA791CA5E7EC0083EFE2 /* Controllers */,
 				AE35FA7A1CA5E7F50083EFE2 /* Fakes */,
 				A35BFBD51CB2189C004AC2AA /* Info.plist */,
 				AE2A3CD71CAF2116006E3C54 /* Services */,
+				AE6B4F2A1CB81732004461B6 /* Stores */,
 				AE35FA7C1CA5EBFF0083EFE2 /* Support */,
 			);
 			path = WhackAPivotSwiftTests;
@@ -351,6 +342,15 @@
 				AE9C65871CA4508E0017DDF2 /* WhackAPivotSwiftUITests.swift */,
 			);
 			path = WhackAPivotSwiftUITests;
+			sourceTree = "<group>";
+		};
+		AE6B4F311CB841E1004461B6 /* fakes */ = {
+			isa = PBXGroup;
+			children = (
+				AE6B4F321CB841E1004461B6 /* FakePersonChallengeService.swift */,
+			);
+			name = fakes;
+			path = Services/fakes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,21 +599,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7763641CB6D08300BC7853 /* PeopleStore.swift in Sources */,
 				AE9C65681CA4508E0017DDF2 /* AppDelegate.swift in Sources */,
+				A35BFBAD1CB20CFC004AC2AA /* GameViewController.swift in Sources */,
 				AE80D80F1CB33F8A00AF3488 /* LoginViewController.swift in Sources */,
-				A35BFBAA1CB20CE8004AC2AA /* PersonChallenge.swift in Sources */,
-				A35BFBA31CB20C9B004AC2AA /* PersonChallengeService.swift in Sources */,
-				AE77636C1CB6D75000BC7853 /* TokenStore.swift in Sources */,
 				A35BFBA41CB20C9B004AC2AA /* PeopleRandomizer.swift in Sources */,
 				A35BFBA51CB20C9B004AC2AA /* PeopleService.swift in Sources */,
-				A35BFBAB1CB20CE8004AC2AA /* Person.swift in Sources */,
+				AE7763641CB6D08300BC7853 /* PeopleStore.swift in Sources */,
 				AE6B4F291CB7F96F004461B6 /* PeopleViewController.swift in Sources */,
+				A35BFBAB1CB20CE8004AC2AA /* Person.swift in Sources */,
+				A35BFBAA1CB20CE8004AC2AA /* PersonChallenge.swift in Sources */,
+				A35BFBA31CB20C9B004AC2AA /* PersonChallengeService.swift in Sources */,
 				A35BFBA71CB20CD8004AC2AA /* PersonDisplayer.swift in Sources */,
 				A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */,
 				A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */,
+				AE77636C1CB6D75000BC7853 /* TokenStore.swift in Sources */,
 				AE83CBB01CB409940030378E /* URLProvider.swift in Sources */,
-				A35BFBAD1CB20CFC004AC2AA /* GameViewController.swift in Sources */,
 				AE35FAE81CAAEB0C0083EFE2 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,20 +622,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A35BFBC81CB2127E004AC2AA /* FakePersonChallengeService.swift in Sources */,
 				AEBB8F7B1CB318420050A0D4 /* FakePeopleRandomizer.swift in Sources */,
 				AE77635F1CB4DF2800BC7853 /* FakePeopleService.swift in Sources */,
-				AE80D8111CB33FE900AF3488 /* LoginViewControllerSpec.swift in Sources */,
-				A35BFBB91CB21194004AC2AA /* PersonChallengeServiceSpec.swift in Sources */,
-				AE7763701CB6D82B00BC7853 /* FakeTokenStore.swift in Sources */,
-				A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */,
-				AE77637F1CB7152B00BC7853 /* FakePersonDisplayer.swift in Sources */,
-				A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */,
-				A35BFBBB1CB2119E004AC2AA /* GameViewControllerSpec.swift in Sources */,
-				AE7763611CB6C69000BC7853 /* PeopleServiceSpec.swift in Sources */,
-				AE6B4F2C1CB81772004461B6 /* TokenStoreSpec.swift in Sources */,
-				AE6B4F2E1CB82FFA004461B6 /* PeopleViewControllerSpec.swift in Sources */,
 				AE7763681CB6D37300BC7853 /* FakePeopleStore.swift in Sources */,
+				A35BFBC81CB2127E004AC2AA /* FakePersonChallengeService.swift in Sources */,
+				AE77637F1CB7152B00BC7853 /* FakePersonDisplayer.swift in Sources */,
+				AE7763701CB6D82B00BC7853 /* FakeTokenStore.swift in Sources */,
+				A35BFBBB1CB2119E004AC2AA /* GameViewControllerSpec.swift in Sources */,
+				AE80D8111CB33FE900AF3488 /* LoginViewControllerSpec.swift in Sources */,
+				A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */,
+				AE7763611CB6C69000BC7853 /* PeopleServiceSpec.swift in Sources */,
+				AE6B4F2E1CB82FFA004461B6 /* PeopleViewControllerSpec.swift in Sources */,
+				A35BFBB91CB21194004AC2AA /* PersonChallengeServiceSpec.swift in Sources */,
+				A35BFBBD1CB211A6004AC2AA /* SwinjectSpec.swift in Sources */,
+				AE6B4F2C1CB81772004461B6 /* TokenStoreSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,7 +748,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "d97f40ce-d9a8-45c8-b1a2-27d18c005de7";
+				PROVISIONING_PROFILE = "552fe8ca-bc7f-4098-bc62-88de7e411bc2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
