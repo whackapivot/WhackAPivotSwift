@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fce2d36a-41e5-4846-98f7-577145cd3a41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/WhackAPivotSwift.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Stores/PeopleStore.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Stores/TokenStore.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Services/PeopleServiceSpec.swift" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Controllers/ViewController.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Controllers/GameViewController.swift" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Models/PeopleChoicesAndTarget.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Models/PersonChallenge.swift" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Controllers/ViewControllerSpec.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Controllers/GameViewControllerSpec.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-acknowledgements.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-acknowledgements.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift-frameworks.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.debug.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WhackAPivotSwift/Pods-WhackAPivotSwift.release.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/WhackAPivotSwift.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift/LoginViewController.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/LoginViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Main/SwinjectStoryboard+Setup.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Main/SwinjectStoryboard+Setup.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleChoicesAndTargetService.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleChoicesAndTargetService.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleRandomizer.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleRandomizer.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleService.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleService.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwift/Storyboards/Main.storyboard" afterPath="$PROJECT_DIR$/WhackAPivotSwift/Storyboards/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Controllers/LoginViewControllerSpec.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Controllers/LoginViewControllerSpec.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Fakes/FakePeopleChoicesAndTargetService.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Fakes/FakePeopleChoicesAndTargetService.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Fakes/FakePeopleRandomizer.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Fakes/FakePeopleRandomizer.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Fakes/FakePeopleService.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Fakes/FakePeopleService.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Services/PeopleChoicesAndTargetServiceSpec.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Services/PeopleChoicesAndTargetServiceSpec.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WhackAPivotSwiftTests/Services/PeopleRandomizerSpec.swift" afterPath="$PROJECT_DIR$/WhackAPivotSwiftTests/Services/PeopleRandomizerSpec.swift" />
-    </list>
+    <list default="true" id="fce2d36a-41e5-4846-98f7-577145cd3a41" name="Default" comment="" />
     <ignored path="WhackAPivotSwift.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +20,7 @@
     <favorites_list name="WhackAPivotSwift" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="PersonChallenge.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Models/PersonChallenge.swift">
           <provider selected="true" editor-type-id="text-editor">
@@ -62,20 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PeopleChoicesAndTargetService.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleChoicesAndTargetService.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/LoginViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="135">
               <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -84,12 +43,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameViewController.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Controllers/GameViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Models/Person.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,11 +255,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.WhackAPivotSwift">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WhackAPivotSwift" TARGET_NAME="WhackAPivotSwift" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="WhackAPivotSwift" RUN_TARGET_NAME="WhackAPivotSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
@@ -311,6 +283,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -327,13 +305,6 @@
       </EXTENSION>
       <method />
     </configuration>
-    <configuration default="false" name="OMGHTTPURLRQ" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="OMGHTTPURLRQ" CONFIG_NAME="Debug" SCHEME_NAME="OMGHTTPURLRQ" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-      <envs />
-      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
-        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
-      </EXTENSION>
-      <method />
-    </configuration>
     <configuration default="false" name="Pods-WhackAPivotSwift" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-WhackAPivotSwift" CONFIG_NAME="Debug" SCHEME_NAME="Pods-WhackAPivotSwift" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
@@ -342,13 +313,6 @@
       <method />
     </configuration>
     <configuration default="false" name="Pods-WhackAPivotSwiftTests" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-WhackAPivotSwiftTests" CONFIG_NAME="Debug" SCHEME_NAME="Pods-WhackAPivotSwiftTests" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
-      <envs />
-      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
-        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
-      </EXTENSION>
-      <method />
-    </configuration>
-    <configuration default="false" name="PromiseKit" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="PromiseKit" CONFIG_NAME="Debug" SCHEME_NAME="PromiseKit" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
@@ -376,16 +340,22 @@
       </EXTENSION>
       <method />
     </configuration>
-    <list size="9">
+    <configuration default="false" name="CBGPromise" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="CBGPromise" CONFIG_NAME="Debug" SCHEME_NAME="CBGPromise" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.WhackAPivotSwift" />
       <item index="1" class="java.lang.String" itemvalue="Application.Nimble" />
-      <item index="2" class="java.lang.String" itemvalue="Application.OMGHTTPURLRQ" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Pods-WhackAPivotSwift" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Pods-WhackAPivotSwiftTests" />
-      <item index="5" class="java.lang.String" itemvalue="Application.PromiseKit" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Quick" />
-      <item index="7" class="java.lang.String" itemvalue="Application.RandomKit" />
-      <item index="8" class="java.lang.String" itemvalue="Application.Swinject" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Pods-WhackAPivotSwift" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Pods-WhackAPivotSwiftTests" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Quick" />
+      <item index="5" class="java.lang.String" itemvalue="Application.RandomKit" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Swinject" />
+      <item index="7" class="java.lang.String" itemvalue="Application.CBGPromise" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -403,24 +373,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="580" y="191" width="1400" height="1000" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -441,17 +411,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleChoicesAndTargetService.swift">
+    <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/LoginViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Controllers/GameViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Models/PersonChallenge.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Services/PeopleChoicesAndTargetService.swift" />
     <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/LoginViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="135">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -462,8 +451,18 @@
     <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Controllers/GameViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WhackAPivotSwift/Models/Person.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -14,21 +14,21 @@ class GameViewControllerSpec: SwinjectSpec {
             let fakePeopleStore = PeopleStoreImpl()
             
             let fakePeople = [
-                Person(name: "Joe", image: UIImage()),
-                Person(name: "Steve", image: UIImage()),
-                Person(name: "Steve2", image: UIImage()),
-                Person(name: "Steve3", image: UIImage()),
-                Person(name: "Steve4", image: UIImage()),
-                Person(name: "Steve5", image: UIImage()),
+                Person(name: "Joe"),
+                Person(name: "Steve"),
+                Person(name: "Steve2"),
+                Person(name: "Steve3"),
+                Person(name: "Steve4"),
+                Person(name: "Steve5"),
             ]
             
             let fakePeople2 = [
-                Person(name: "Joe7", image: UIImage()),
-                Person(name: "Steve7", image: UIImage()),
-                Person(name: "Steve27", image: UIImage()),
-                Person(name: "Steve37", image: UIImage()),
-                Person(name: "Steve47", image: UIImage()),
-                Person(name: "Steve57", image: UIImage()),
+                Person(name: "Joe7"),
+                Person(name: "Steve7"),
+                Person(name: "Steve27"),
+                Person(name: "Steve37"),
+                Person(name: "Steve47"),
+                Person(name: "Steve57"),
             ]
             
             beforeEach {

@@ -2,8 +2,19 @@ import Foundation
 import UIKit
 
 struct Person : Hashable {
+    var id: Int = 0
     var name: String
-    var image: UIImage
+    var image: UIImage = UIImage()
+    
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.image = image
+    }
     
     var hashValue: Int {
         get {
