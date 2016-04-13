@@ -6,23 +6,19 @@ struct Person : Hashable {
     var name: String
     var image: UIImage = UIImage()
     
-    
-    init(name: String) {
-        self.name = name
-    }
-    
-    init(name: String, image: UIImage) {
+    init(name: String, id: Int = 0, image: UIImage = UIImage()) {
+        self.id = id
         self.name = name
         self.image = image
     }
     
     var hashValue: Int {
         get {
-            return name.hashValue
+            return "\(id)\(name)".hashValue
         }
     }
 }
 
 func ==(lhs: Person, rhs: Person) -> Bool {
-    return lhs.name == rhs.name && lhs.image == rhs.image
+    return lhs.name == rhs.name && lhs.image == rhs.image && lhs.id == rhs.id
 }

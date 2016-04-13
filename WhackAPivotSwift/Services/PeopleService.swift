@@ -9,6 +9,13 @@ protocol PeopleService {
 class PeopleServiceImpl: PeopleService {
     var tokenStore: TokenStore
     let session: NSURLSession
+    
+    let firstNameKey = "first_name"
+    let lastNameKey = "last_name"
+    let locationKey = "location_name"
+    let imageKey = "photo_url"
+    let idKey = "id"
+    
     let urlProvider: URLProvider
     let dummyImage = UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("dummy", ofType: "png")!)
     
@@ -56,11 +63,12 @@ class PeopleServiceImpl: PeopleService {
             
             var people: [Person] = []
             for dict in resultAsArray {
-                guard let location = dict["location_name"] else { continue }
+                guard let location = dict[self.locationKey] else { continue }
                 guard location as? String == "Los Angeles" else { continue }
-                let name = "\(dict["first_name"]! as! String) \(dict["last_name"]! as! String)"
-                let image = dict["photo_url"]! as! String
-                people.append(Person(name: name, image: self.imageFromString(image)!))
+                let name = "\(dict[self.firstNameKey]! as! String) \(dict["last_name"]! as! String)"
+                let image = dict[self.imageKey]! as! String
+                let id = dict[self.idKey] as! NSInteger
+                people.append(Person(name: name, image: self.imageFromString(image)!, id: id))
             }
             
             promise.resolve(people)
