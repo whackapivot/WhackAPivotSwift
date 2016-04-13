@@ -10,11 +10,11 @@ class FakeDataSession: NSURLSessionDataTask {
 
 class FakeNSURLSession: NSURLSession {
     var peopleInput: NSArray?
-    var request: NSURLRequest!
+    var urlToExpect: NSURL?
     
     override func dataTaskWithRequest(request: NSURLRequest, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) -> NSURLSessionDataTask {
-        self.request = request
         var data: NSData = NSData()
+        guard request.URL == urlToExpect else { return FakeDataSession() }
         do {
             data = try NSJSONSerialization.dataWithJSONObject(peopleInput!, options: .PrettyPrinted)
             completionHandler(data, nil, nil)
@@ -24,14 +24,29 @@ class FakeNSURLSession: NSURLSession {
     }
 }
 
+class FakeURLProvider: URLProvider {
+    var urlToReturn: NSURL?
+    
+    func urlForPath(path: String) -> NSURL {
+        return NSURL()
+    }
+    
+    func getPeopleURL() -> NSURL {
+        return urlToReturn!
+    }
+}
+
 class PeopleServiceSpec: QuickSpec {
     override func spec() {
         describe("PeopleService") {
             let fakeTokenStore = FakeTokenStore()
+            let fakeURL = NSURL(string: "http://example.com")
             let fakeNSURLSession = FakeNSURLSession()
+            let fakeURLProvider = FakeURLProvider()
             
             let subject = PeopleServiceImpl(tokenStore: fakeTokenStore,
-                                            session: fakeNSURLSession)
+                                            session: fakeNSURLSession,
+                                            urlProvider: fakeURLProvider)
             
             let fakeToken = "FakeTokenString123"
             fakeTokenStore.token = fakeToken
@@ -52,7 +67,9 @@ class PeopleServiceSpec: QuickSpec {
                 
                 beforeEach {
                     promise = Promise<[Person]?, NSError>()
+                    fakeURLProvider.urlToReturn = fakeURL
                     fakeNSURLSession.peopleInput = peopleInput
+                    fakeNSURLSession.urlToExpect = fakeURL
                     promise = subject.getPeople()
                 }
                 

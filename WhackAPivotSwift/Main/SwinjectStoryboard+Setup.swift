@@ -7,7 +7,7 @@ extension SwinjectStoryboard {
         
         let peopleStoreImpl = PeopleStoreImpl()
         let tokenStoreImpl = TokenStoreImpl()
-
+        
         // View Controllers
         defaultContainer.registerForStoryboard(LoginViewController.self) { r, c in
             c.urlProvider = r.resolve(URLProvider.self)
@@ -35,7 +35,8 @@ extension SwinjectStoryboard {
         defaultContainer.register(PeopleService.self) { r in
             PeopleServiceImpl(
                 tokenStore: r.resolve(TokenStore.self)!,
-                session: NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+                session: NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration()),
+                urlProvider: r.resolve(URLProvider.self)!
             )
         }
         

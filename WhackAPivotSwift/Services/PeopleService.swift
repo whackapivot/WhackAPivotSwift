@@ -9,11 +9,13 @@ protocol PeopleService {
 class PeopleServiceImpl: PeopleService {
     var tokenStore: TokenStore
     let session: NSURLSession
+    let urlProvider: URLProvider
     let dummyImage = UIImage(contentsOfFile: NSBundle.mainBundle().pathForResource("dummy", ofType: "png")!)
     
-    init(tokenStore: TokenStore, session: NSURLSession) {
+    init(tokenStore: TokenStore, session: NSURLSession, urlProvider: URLProvider) {
         self.tokenStore = tokenStore
         self.session = session
+        self.urlProvider = urlProvider
     }
     
     func getPeople() -> Promise<[Person]?, NSError> {        
@@ -29,7 +31,7 @@ class PeopleServiceImpl: PeopleService {
             return promise
         }
         
-        let urlRequest = NSMutableURLRequest(URL: NSURL(string: "https://pivots.pivotallabs.com/api/users.json")!)
+        let urlRequest = NSMutableURLRequest(URL: urlProvider.getPeopleURL())
         let cookieValue = "_pivots-two_session=\(sessionToken)"
         urlRequest.setValue(cookieValue, forHTTPHeaderField: "Cookie")
         
