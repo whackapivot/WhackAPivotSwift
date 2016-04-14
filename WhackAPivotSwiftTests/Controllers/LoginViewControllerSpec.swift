@@ -5,6 +5,13 @@ import WebKit
 
 @testable import WhackAPivotSwift
 
+extension LoginViewController {
+    override func performSegueWithIdentifier(identifier: String, sender: AnyObject?) {
+        self.performSegueIdentifierArg = identifier
+        self.performSegueSenderArg = sender
+        self.performSegueCallCount += 1
+    }
+}
 class LoginViewControllerSpec: SwinjectSpec {
     override func spec() {
         describe("LoginViewController") {
@@ -13,6 +20,10 @@ class LoginViewControllerSpec: SwinjectSpec {
             
             class FakeTokenStore: TokenStore {
                 var token: Token?
+            }
+            
+            class FakePeopleStore: PeopleStore {
+                var people: [Person]?
             }
             
             class FakeUIWebView: UIWebView {
@@ -27,17 +38,21 @@ class LoginViewControllerSpec: SwinjectSpec {
             
             let fakeWebView: FakeUIWebView = FakeUIWebView()
             var fakeTokenStore: FakeTokenStore!
+            var fakePeopleStore: FakePeopleStore?
             
             beforeEach {
                 fakeTokenStore = FakeTokenStore()
+                fakePeopleStore = FakePeopleStore()
                 
                 self.testContainer.registerForStoryboard(LoginViewController.self) { _, controller in
                     controller.urlProvider = testURLProvider
                     controller.tokenStore = fakeTokenStore
+                    controller.peopleStore = fakePeopleStore
                 }
                 
                 
-                controller = self.startController("LoginViewController", storyboardName: "Main") as! LoginViewController
+                controller = self.instantiateController("LoginViewController", storyboardName: "Main") as! LoginViewController
+                _ = controller.view
             }
             
             it("should have a UIWebView as a view") {
@@ -57,6 +72,18 @@ class LoginViewControllerSpec: SwinjectSpec {
                 beforeEach {
                     controller.webView = fakeWebView
                 }
+                describe("When the people are present in the PeopleStore") {
+                    beforeEach {
+                        fakePeopleStore?.people = []
+                        controller.viewDidAppear(false)
+                    }
+                    
+                    it("should segue to the game controller") {
+                        expect(controller.performSegueCallCount).to(equal(1))
+                        expect(controller.performSegueIdentifierArg).to(equal(controller.gameSegueId))
+                        expect(controller.performSegueSenderArg).to(beIdenticalTo(controller))
+                    }
+                }
                 describe("When the token is present in the TokenStore") {
                     beforeEach {
                         fakeTokenStore.token = "some token"
@@ -64,7 +91,9 @@ class LoginViewControllerSpec: SwinjectSpec {
                     }
                     
                     it("should segue to the PeopleViewController") {
-                        expect(controller.seguePerformed).to(beTruthy())
+                        expect(controller.performSegueCallCount).to(equal(1))
+                        expect(controller.performSegueIdentifierArg).to(equal(controller.peopleLoadingSegueId))
+                        expect(controller.performSegueSenderArg).to(beIdenticalTo(controller))
                     }
                 }
                 describe("When the token is not present in the TokenStore") {
@@ -139,8 +168,10 @@ class LoginViewControllerSpec: SwinjectSpec {
                             expect(fakeTokenStore.token).to(equal(cookie.value))
                         }
                         
-                        it("should segue to the next screen") {
-                            expect(controller.seguePerformed).to(beTruthy())
+                        it("should segue to the people loading screen") {
+                            expect(controller.performSegueCallCount).to(equal(1))
+                            expect(controller.performSegueIdentifierArg).to(equal(controller.peopleLoadingSegueId))
+                            expect(controller.performSegueSenderArg).to(beIdenticalTo(controller))
                         }
                     }
                     
@@ -151,7 +182,7 @@ class LoginViewControllerSpec: SwinjectSpec {
                         }
                         
                         it("should not segue to the next screen") {
-                            expect(controller.seguePerformed).to(beFalsy())
+                            expect(controller.performSegueCallCount).to(equal(0))
                         }
                     }
                 }

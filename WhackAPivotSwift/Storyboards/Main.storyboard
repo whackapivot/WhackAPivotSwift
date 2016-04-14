@@ -18,6 +18,7 @@
                     <connections>
                         <outlet property="webView" destination="Fr9-62-N1Y" id="0vu-rw-lMn"/>
                         <segue destination="yd4-tT-L1a" kind="show" identifier="PeopleViewController" id="Zwz-RD-F2g"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToGame" id="l8t-ZV-4Vb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iz5-mz-PVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -56,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XL-KG-RgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="806"/>
+            <point key="canvasLocation" x="351" y="457"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -80,7 +81,7 @@
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujk-Wx-tKl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-fk-E4s" userLabel="Center Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-fk-E4s" userLabel="Center Button">
                                 <rect key="frame" x="206" y="30" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -94,21 +95,21 @@
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4eW-T6-37Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKh-ZQ-Qjl" userLabel="L Left Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKh-ZQ-Qjl" userLabel="L Left Button">
                                 <rect key="frame" x="10" y="228" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zif-Va-0h3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-Nc-xVC" userLabel="L Center Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnK-Nc-xVC" userLabel="L Center Button">
                                 <rect key="frame" x="206" y="228" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="clickedOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1g6-A8-zep"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pa-bO-6kk" userLabel="L Right Button">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pa-bO-6kk" userLabel="L Right Button">
                                 <rect key="frame" x="403" y="228" width="187" height="189"/>
                                 <color key="backgroundColor" red="0.3613733764" green="1" blue="0.42377508380000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -120,7 +121,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="{name}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-G6-bgA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="{name}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isq-G6-bgA">
                                 <rect key="frame" x="272" y="560" width="56" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -176,4 +177,7 @@
             <point key="canvasLocation" x="1242" y="806"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ROo-O5-gCL"/>
+    </inferredMetricsTieBreakers>
 </document>
