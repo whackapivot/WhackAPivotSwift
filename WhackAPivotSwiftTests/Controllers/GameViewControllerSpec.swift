@@ -8,10 +8,13 @@ import CBGPromise
 class GameViewControllerSpec: SwinjectSpec {
     override func spec() {
         describe("GameViewController") {
+            class FakePeopleStore: PeopleStore {
+                var people: [Person]?
+            }
             var gameViewController: GameViewController!
             var fakePersonChallengeService: FakePersonChallengeService!
             var fakePersonDisplayer: FakePersonDisplayer!
-            let fakePeopleStore = PeopleStoreImpl()
+            let fakePeopleStore = FakePeopleStore()
             
             let fakePeople = [
                 Person(name: "Joe"),
@@ -43,7 +46,8 @@ class GameViewControllerSpec: SwinjectSpec {
                 fakePeopleStore.people = fakePeople
                 fakePersonChallengeService.getChallengeReturns(PersonChallenge(peopleChoices: fakePeople, target: 1))
 
-                gameViewController = self.startController("GameViewController", storyboardName: "Main") as! GameViewController
+                gameViewController = self.instantiateController("GameViewController", storyboardName: "Main") as! GameViewController
+                _ = gameViewController.view
             }
         
             it("displays the correct set of people") {

@@ -12,10 +12,9 @@ import Swinject
 class SwinjectSpec: QuickSpec {
     let testContainer = Container()
     
-    func startController(controllerName: String, storyboardName: String) -> UIViewController {
+    func instantiateController(controllerName: String, storyboardName: String) -> UIViewController {
         let storyboard = SwinjectStoryboard.create(name: storyboardName, bundle: nil, container: testContainer)
         let controller = storyboard.instantiateViewControllerWithIdentifier(controllerName)
-        let _ = controller.view
         return controller
     }
 }

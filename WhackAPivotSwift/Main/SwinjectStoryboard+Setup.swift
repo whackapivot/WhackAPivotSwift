@@ -12,6 +12,7 @@ extension SwinjectStoryboard {
         defaultContainer.registerForStoryboard(LoginViewController.self) { r, c in
             c.urlProvider = r.resolve(URLProvider.self)
             c.tokenStore = r.resolve(TokenStore.self)
+            c.peopleStore = r.resolve(PeopleStore.self)
         }
         
         defaultContainer.registerForStoryboard(PeopleViewController.self) { r, c in

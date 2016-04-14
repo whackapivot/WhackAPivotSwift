@@ -22,7 +22,8 @@ class PeopleViewControllerSpec: SwinjectSpec {
                     controller.peopleStore = fakePeopleStore
                 }
                 
-                controller = self.startController("PeopleViewController", storyboardName: "Main") as! PeopleViewController
+                controller = self.instantiateController("PeopleViewController", storyboardName: "Main") as! PeopleViewController
+                _ = controller.view
             }
             
             describe("#viewDidAppear") {

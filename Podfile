@@ -5,6 +5,8 @@ target 'WhackAPivotSwift' do
     pod 'Swinject'
     pod 'RandomKit'
     pod 'CBGPromise'
+    pod 'SwiftyJSON'
+    pod 'CBGPromise'
     
     pod 'Fabric'
     pod 'Crashlytics'
@@ -14,7 +16,7 @@ target 'WhackAPivotSwiftTests' do
     pod 'Swinject'
     pod 'RandomKit'
     pod 'CBGPromise'
-    
+ 
     pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git'
     pod 'Quick'
 end
