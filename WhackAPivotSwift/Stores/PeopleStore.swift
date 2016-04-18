@@ -7,10 +7,11 @@ protocol PeopleStore {
 
 class PeopleStoreImpl: PeopleStore {
     let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).first! as String
+    var savedPeople: [Person]?
     var people: [Person]? {
         get {
-            var peopleArray: [Person] = []
-            
+            if savedPeople?.count > 0 { return savedPeople }
+            savedPeople = []
             do {
                 let text = try String(contentsOfFile: pathForPeople(), encoding: NSUTF8StringEncoding)
                 let data = text.dataUsingEncoding(NSUTF8StringEncoding)
@@ -19,14 +20,12 @@ class PeopleStoreImpl: PeopleStore {
                     let peopleDict = peopleJsonArray[i]
                     var person = Person(name: peopleDict["name"].stringValue, id: peopleDict["id"].intValue)
                     person.image = UIImage(contentsOfFile: pathForPersonImage(person))!
-                    peopleArray += [person]
+                    savedPeople! += [person]
                 }
-                self.people = peopleArray
             } catch {
                 return nil
             }
-            
-            return peopleArray
+            return savedPeople
         }
         
         set(newPeople) {
@@ -35,7 +34,7 @@ class PeopleStoreImpl: PeopleStore {
                     let filename = pathForPersonImage(person)
                     data.writeToFile(filename, atomically: true)
                 }
-
+                
                 return ["id": NSInteger(person.id), "name": person.name]
             }
             let data: NSData
@@ -49,9 +48,9 @@ class PeopleStoreImpl: PeopleStore {
     }
     
     private func pathForPersonImage(person: Person) -> String {
-        return "\(documentsPath)\(person.id).png"
+        return "\(documentsPath)/\(person.id).png"
     }
     private func pathForPeople() -> String {
-        return "\(documentsPath)people.json"
+        return "\(documentsPath)/people.json"
     }
 }

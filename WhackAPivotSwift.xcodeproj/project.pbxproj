@@ -24,6 +24,7 @@
 		A35BFBCE1CB2157C004AC2AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35BFBCC1CB2157C004AC2AA /* Main.storyboard */; };
 		A35BFBD01CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBCF1CB215A7004AC2AA /* SwinjectStoryboard+Setup.swift */; };
 		A35BFBD81CB21902004AC2AA /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */; };
+		A3854A491CC3F6EF009BC30A /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = A3854A481CC3F6EF009BC30A /* fastlane */; };
 		A3DEF3771CB21DCD006B3452 /* PeopleRandomizerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */; };
 		AE0EE1E31CB8690B00148FE4 /* dummy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0EE1E21CB8690B00148FE4 /* dummy.png */; };
 		AE24A2041CBE860C000CFAAE /* PeopleStoreSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE24A2031CBE860C000CFAAE /* PeopleStoreSpec.swift */; };
@@ -86,6 +87,7 @@
 		A35BFBD31CB2180C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35BFBD51CB2189C004AC2AA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A35BFBD71CB21902004AC2AA /* TestAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
+		A3854A481CC3F6EF009BC30A /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		A3DEF3761CB21DCD006B3452 /* PeopleRandomizerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleRandomizerSpec.swift; sourceTree = "<group>"; };
 		AE0EE1E21CB8690B00148FE4 /* dummy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dummy.png; path = Images/dummy.png; sourceTree = "<group>"; };
 		AE24A2031CBE860C000CFAAE /* PeopleStoreSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleStoreSpec.swift; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 		AE9C655B1CA4508E0017DDF2 = {
 			isa = PBXGroup;
 			children = (
+				A3854A481CC3F6EF009BC30A /* fastlane */,
 				8554DB280D7803B8844523E9 /* Frameworks */,
 				12D989BDB9DAC914AF963D17 /* Pods */,
 				AE9C65651CA4508E0017DDF2 /* Products */,
@@ -482,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3854A491CC3F6EF009BC30A /* fastlane in Resources */,
 				AE9C656F1CA4508E0017DDF2 /* Assets.xcassets in Resources */,
 				AE24A2061CBE88A6000CFAAE /* dummy2.png in Resources */,
 				A35BFBCD1CB2157C004AC2AA /* LaunchScreen.storyboard in Resources */,
@@ -687,7 +691,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_DELEGATE_NAME = WhackAPivotSwift.TestAppDelegate;
+				APP_DELEGATE_NAME = WhackAPivotSwift.AppDelegate;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -704,7 +708,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Peter Alfvin (SD224DZYP4)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Peter Alfvin (SD224DZYP4)";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -754,7 +758,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Peter Alfvin (22XZS247UC)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Peter Alfvin (22XZS247UC)";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -780,9 +784,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9902A65C5C8765A1DF63D710 /* Pods-WhackAPivotSwift.debug.xcconfig */;
 			buildSettings = {
+				APP_DELEGATE_NAME = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -804,9 +808,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DCF87B72EF1E197CD6BAB99D /* Pods-WhackAPivotSwift.release.xcconfig */;
 			buildSettings = {
+				APP_DELEGATE_NAME = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -831,6 +835,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B5012F94A425348A0AD92AC /* Pods-WhackAPivotSwiftTests.debug.xcconfig */;
 			buildSettings = {
+				APP_DELEGATE_NAME = WhackAPivotSwift.TestAppDelegate;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WhackAPivotSwiftTests/Info.plist;
@@ -845,6 +850,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E406990A24A3B2F5C30DB9C5 /* Pods-WhackAPivotSwiftTests.release.xcconfig */;
 			buildSettings = {
+				APP_DELEGATE_NAME = WhackAPivotSwift.TestAppDelegate;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = WhackAPivotSwiftTests/Info.plist;

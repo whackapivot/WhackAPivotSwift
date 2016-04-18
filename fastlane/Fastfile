@@ -12,9 +12,10 @@ platform :ios do
   end
 
   desc "Continuous integration"
-  lane :ci do
+  lane :ci do |options|
+    raise 'Must specify release_notes (e.g. release_notes:"This is a great release")' unless options[:release_notes]
     specs
-    acceptance
+    acceptance(options)
   end
 
   desc "Runs all the tests"
@@ -23,7 +24,11 @@ platform :ios do
   end
 
   desc "Submit a new Build to Apple TestFlight"
-  lane :acceptance do
+  lane :acceptance do |options|
+
+    release_notes = options[:release_notes]
+    raise 'Must specify release_notes (e.g. release_notes:"This is a great release")' unless release_notes
+
     keychain_name = "CI-Keychain"
 
     create_keychain(
@@ -51,12 +56,12 @@ platform :ios do
     sigh(
       username: "palfvin@gmail.com",
       team_id: "22XZS247UC",
-      provisioning_name: "iPhoneAdHocProfile",
+      provisioning_name: "iPhoneAppStoreProfile",
       cert_id: "22XZS247UC"
     )
 
-    increment_build_number
-
+    # increment_build_number
+    #
     gym(
       scheme: 'WhackAPivotSwift',
       workspace: 'WhackAPivotSwift.xcworkspace',
@@ -64,7 +69,8 @@ platform :ios do
     )
 
     pilot(
-      skip_submission: true
+      skip_submission: true,
+      changelog: release_notes,
     )
 
     commit_version_bump(message: "Auto update build number to: #{get_build_number}\n[ci skip]")

@@ -18,7 +18,9 @@ class PeopleViewController: UIViewController {
     
     private func segueToPeople() {
         segueToPeoplePerformed = true
-        performSegueWithIdentifier("GameViewController", sender: self)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.performSegueWithIdentifier("GameViewController", sender: self)
+        }
     }
     
     private func segueToLogin() {
