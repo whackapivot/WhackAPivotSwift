@@ -40,11 +40,11 @@ class PeopleViewControllerSpec: SwinjectSpec {
                         fakePromise.resolve(people)
                     }
                     it("should save the people to the PeopleStore") {
-                        expect(fakePeopleStore.people).to(equal(people))
+                        expect(fakePeopleStore.people).toEventually(equal(people))
                         
                     }
                     it("should segue to the PeopleController") {
-                        expect(controller.segueToPeoplePerformed).to(beTruthy())
+                        expect(controller.segueToPeoplePerformed).toEventually(beTruthy())
                     }
                 }
                 describe("When people service fails") {
@@ -53,7 +53,7 @@ class PeopleViewControllerSpec: SwinjectSpec {
                     }
 
                     it("should segue to the LoginController") {
-                        expect(controller.segueToLoginPerformed).to(beTruthy())
+                        expect(controller.segueToLoginPerformed).toEventually(beTruthy())
                     }
                     
                 }

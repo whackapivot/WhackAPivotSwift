@@ -10,7 +10,9 @@ class PeopleViewController: UIViewController {
         let promise = peopleService.getPeople()
         promise.future.then { people in
             self.peopleStore.people = people
-            self.segueToPeople()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.segueToPeople()
+            }
             }.error { error in
                 self.segueToLogin()
         }
