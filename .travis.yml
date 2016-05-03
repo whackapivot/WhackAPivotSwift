@@ -13,8 +13,5 @@ script:
 - fastlane ci release_notes:"`git log -1 --pretty=%B | head -1`"
 before_install:
 - openssl aes-256-cbc -K $encrypted_3ab85840813e_key -iv $encrypted_3ab85840813e_iv
-  -in fastlane/SigningIdentities/DevelopmentSigningIdentity.p12.enc -out fastlane/SigningIdentities/DevelopmentSigningIdentity.p12
-  -d
-- openssl aes-256-cbc -K $encrypted_3ab85840813e_key -iv $encrypted_3ab85840813e_iv
-  -in fastlane/SigningIdentities/DistributionSigningIdentity.p12.enc -out fastlane/SigningIdentities/DistributionSigningIdentity.p12
-  -d
+  -in secrets.tar.enc -out secrets.tar -d
+- tar xvf secrets.tar
